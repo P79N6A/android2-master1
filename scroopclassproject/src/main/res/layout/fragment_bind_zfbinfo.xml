@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wh.wang.scroopclassproject.newproject.fun_class.study_group.fragment.frag2_0.BindZFBInfoFragment">
+
+    <TextView
+        android:id="@+id/bind_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#8a8a8a"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/zfb_no_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bind_title"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"
+        android:textColor="#333740"
+        android:text="支付宝账号"/>
+
+    <EditText
+        android:id="@+id/zfb_no"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:paddingLeft="15dp"
+        android:layout_toLeftOf="@+id/del_zfb_no"
+        android:textColorHint="@color/video_title"
+        android:hint="请一定准确填写支付宝账号"
+        android:textSize="14sp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/zfb_no_tv"/>
+
+    <ImageView
+        android:id="@+id/del_zfb_no"
+        android:layout_width="14dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/zfb_no"
+        android:layout_alignBottom="@id/zfb_no"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/search_del"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#eeeeee"
+        android:layout_below="@+id/zfb_no"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/zfb_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zfb_no"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#333740"
+        android:text="支付宝账户名"/>
+
+    <EditText
+        android:id="@+id/zfb_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:paddingLeft="15dp"
+        android:layout_toLeftOf="@+id/del_zfb_name"
+        android:textColorHint="@color/video_title"
+        android:hint="请一定准确填写支付宝账户名"
+        android:textSize="14sp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/zfb_name_tv"/>
+
+    <ImageView
+        android:id="@+id/del_zfb_name"
+        android:layout_width="14dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/zfb_name"
+        android:layout_alignBottom="@id/zfb_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/search_del"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#eeeeee"
+        android:layout_below="@+id/zfb_name"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"/>
+
+</RelativeLayout>

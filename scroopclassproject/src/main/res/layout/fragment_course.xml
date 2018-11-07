@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/content"
+    tools:context="com.wh.wang.scroopclassproject.newproject.ui.fragment.main_frag.CourseFragment">
+
+    <FrameLayout
+        android:id="@+id/search_content_l"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            android:id="@+id/search_content"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="14sp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/new_search_edit_bg_shape"
+            android:gravity="center_vertical"
+            android:textColor="#8B8F97"
+            android:text=""/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_content_l"
+        android:orientation="horizontal">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/label_list"
+            android:layout_width="76dp"
+            android:background="@color/label_unselect"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+        <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+            android:id="@+id/frag_free_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff">
+
+            <include
+                android:id="@id/swipe_refresh_header"
+                layout="@layout/layout_header"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/swipe_target"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+            <include
+                android:id="@id/swipe_load_more_footer"
+                layout="@layout/layout_foot"/>
+        </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="48dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/weixuanzhong"
+        android:scaleType="centerCrop"/>
+
+    <com.wh.wang.scroopclassproject.newproject.view.BunchCardLineView
+        android:id="@+id/punch_card_icon"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_below="@+id/img"/>
+    <TextView
+        android:id="@+id/punch_card_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/punch_card_icon"
+        android:textSize="12sp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textColor="@color/video_title_v"/>
+</RelativeLayout>

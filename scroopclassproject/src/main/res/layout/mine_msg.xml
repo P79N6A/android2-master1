@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f2f4f7"
+                tools:context="com.wh.wang.scroopclassproject.activity.MineMsgActivity">
+
+    <include layout="@layout/titlebarback_new"/>
+
+    <RelativeLayout
+        android:id="@+id/mine_rlayout_talk"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/titlebarbackss"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/mine_iv_talk"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/mine_talk"/>
+
+
+
+        <TextView
+            android:id="@+id/mine_tv_talk_nums"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:background="@drawable/mine_msg_detail_shape_corner"
+            android:text="99+"
+            android:textColor="@android:color/white"
+            android:layout_alignRight="@+id/mine_iv_talk"
+            android:layout_marginTop="10dp"
+            android:textSize="8sp"/>
+
+        <TextView
+            android:id="@+id/mine_tv_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mine_iv_talk"
+            android:layout_alignTop="@+id/mine_iv_talk"
+            android:text="通知"
+            android:textColor="#282828"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:id="@+id/mine_tv_talkContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_alignBottom="@+id/mine_iv_talk"
+            android:layout_toRightOf="@+id/mine_iv_talk"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="请完成当服务疏落伤害了顾客"
+            android:textColor="#757575"
+            android:textSize="12sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="70dp"
+            android:background="#f2f4f7"/>
+
+        <TextView
+            android:id="@+id/mine_tv_talkTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="10月9号"
+            android:layout_alignTop="@+id/mine_tv_talk"
+            android:textColor="#757575"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/like"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#fff"
+        android:visibility="gone"
+        android:layout_below="@+id/mine_rlayout_talk">
+
+        <ImageView
+            android:id="@+id/like_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/xiaoxi_zan"/>
+
+        <TextView
+            android:id="@+id/like_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#282828"
+            android:textSize="16sp"
+            android:layout_alignTop="@+id/like_icon"
+            android:layout_toRightOf="@+id/like_icon"
+            android:text="收到的赞"/>
+
+        <TextView
+            android:id="@+id/like_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/like_icon"
+            android:layout_toRightOf="@+id/like_icon"
+            android:textSize="12sp"
+            android:textColor="#757575"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="h霍赞了你"/>
+        <TextView
+            android:id="@+id/like_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="10月9号"
+            android:layout_alignTop="@+id/like_tv"
+            android:textColor="#757575"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/like_num"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:gravity="center"
+            android:background="@drawable/mine_msg_detail_shape_corner"
+            android:text="99+"
+            android:visibility="gone"
+            android:layout_alignRight="@+id/like_icon"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="8sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="70dp"
+            android:background="#f2f4f7"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/remind"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#fff"
+        android:visibility="gone"
+        android:layout_below="@+id/like">
+
+        <ImageView
+            android:id="@+id/remind_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/xiaoxi_tx"/>
+
+        <TextView
+            android:id="@+id/remind_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#282828"
+            android:textSize="16sp"
+            android:layout_alignTop="@+id/remind_icon"
+            android:layout_toRightOf="@+id/remind_icon"
+            android:text="收到的提醒"/>
+
+        <TextView
+            android:id="@+id/remind_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/remind_icon"
+            android:layout_toRightOf="@+id/remind_icon"
+            android:textSize="12sp"
+            android:textColor="#757575"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="h霍同学提醒你看课了"/>
+        <TextView
+            android:id="@+id/remind_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="10月9号"
+            android:layout_alignTop="@+id/remind_tv"
+            android:textColor="#757575"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/remind_num"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:gravity="center"
+            android:background="@drawable/mine_msg_detail_shape_corner"
+            android:text="99+"
+            android:visibility="gone"
+            android:layout_alignRight="@+id/remind_icon"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="8sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="70dp"
+            android:background="#f2f4f7"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mine_rlayout_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/remind"
+        android:background="#fff">
+
+
+        <ImageView
+            android:id="@+id/mine_iv_repeat"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/mine_repeat"/>
+
+        <TextView
+            android:id="@+id/mine_tv_repeat_nums"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:text="99+"
+            android:layout_alignRight="@+id/mine_iv_repeat"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/mine_msg_detail_shape_corner"
+            android:textColor="@android:color/white"
+            android:textSize="8sp"/>
+
+        <TextView
+            android:id="@+id/mine_tv_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mine_iv_repeat"
+            android:layout_alignTop="@+id/mine_iv_repeat"
+            android:text="勺子官方回复"
+            android:textColor="#282828"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:id="@+id/mine_tv_repeatContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mine_tv_repeat"
+            android:layout_alignStart="@+id/mine_tv_repeat"
+            android:layout_marginRight="15dp"
+            android:lines="1"
+            android:singleLine="true"
+            android:layout_alignBottom="@+id/mine_iv_repeat"
+            android:text="请完成当服务疏落伤害了顾客"
+            android:textColor="#757575"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/mine_tv_repeatTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignTop="@+id/mine_tv_repeat"
+            android:layout_alignParentRight="true"
+            android:text="10月9号"
+            android:textColor="#757575"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/mine_msg_iv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/mine_empty"
+        android:visibility="gone"/>
+
+</RelativeLayout>

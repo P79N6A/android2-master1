@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:paddingRight="20dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gn1_icon"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="12dp"/>
+
+    <TextView
+        android:id="@+id/function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#282828"
+        android:layout_marginTop="4dp"
+        android:layout_alignTop="@+id/icon"
+        android:text="功能1 "
+        android:layout_toRightOf="@+id/icon"/>
+
+    <TextView
+        android:id="@+id/describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_below="@+id/function"
+        android:layout_alignLeft="@+id/function"
+        android:layout_marginTop="2dp"
+        android:textColor="#5a5a5a"/>
+</RelativeLayout>

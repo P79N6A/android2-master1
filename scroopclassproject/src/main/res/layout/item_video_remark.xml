@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        app:riv_oval="true"
+        android:src="@drawable/mine_head"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/avatar"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#162734"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        android:textColor="#49546D"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="2dp"
+        android:text=""
+        android:textColor="#B6BAC2"
+        android:textSize="13sp"/>
+    <TextView
+        android:id="@+id/replay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_alignTop="@+id/time"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="6dp"
+        android:text="回复"/>
+    
+    <ImageView
+        android:id="@+id/replay_icon"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/replay"
+        android:layout_alignTop="@+id/replay"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/huifu"/>
+
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/replay_icon"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/replay"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:layout_marginLeft="6dp"
+        android:text="删除"/>
+
+
+    <ImageView
+        android:id="@+id/delete_icon"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/delete"
+        android:layout_alignTop="@+id/delete"
+        android:visibility="gone"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/shanchu"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/replay_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_alignLeft="@+id/name"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:visibility="gone"
+        android:background="#f2f4f7">
+    </android.support.v7.widget.RecyclerView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f4f7"
+        android:layout_below="@+id/replay_list"
+        android:layout_marginTop="14dp"
+        android:layout_alignLeft="@+id/name"/>
+</RelativeLayout>

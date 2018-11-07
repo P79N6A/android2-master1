@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.wh.wang.scroopclassproject.activity.UnBindPhoneActivity">
+
+    <include layout="@layout/titlebarback_new" />
+
+    <TextView
+        android:id="@+id/tv_unbind_phone_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebarbackss"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="为保障账户安全"
+        android:textColor="#cfd7e7"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_unbind_phone_tip_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_unbind_phone_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="我们需要验证您的身份"
+        android:textColor="@color/main_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_unbind_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_unbind_phone_tip_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="139****9845"
+        android:textColor="#282828"
+        android:textSize="23sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlayout_unbind_phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_unbind_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/login_shape_corner"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_unbind_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lr_login_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="90dp"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:textColor="#282828"
+            android:textColorHint="#aeb2bf"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/view_unbind_phone"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_unbind_phone_send"
+            android:background="#e6eaf1" />
+
+        <TextView
+            android:id="@+id/tv_unbind_phone_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="发送验证码"
+            android:textColor="@color/main_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_unbind_phone_sure"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rlayout_unbind_phone"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_pass_selector">
+
+        <TextView
+            android:id="@+id/tv_unbind_phone_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:lineSpacingExtra="2dp"
+            android:text="下一步"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_unbind_phone_sure"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/login_worning"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_unbind_phone_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlayout_unbind_phone_sure"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="请输入正确的手机号码"
+        android:textColor="#aeb2bf"
+        android:textSize="12sp"
+        android:visibility="gone" />
+</RelativeLayout>

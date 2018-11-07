@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f2f2f2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/titlebarback_new2"/>
+
+    <ScrollView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/invite"
+        android:scrollbars="none"
+        android:background="#73c89f"
+        android:layout_below="@+id/titlebarbackss">
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="332dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/h5_xcypic"
+            android:adjustViewBounds="true"
+            android:paddingTop="35dp"
+            android:paddingBottom="35dp"
+            android:layout_gravity="center_horizontal" />
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/invite"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:background="@drawable/alj_share_bg"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="分享抢书"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

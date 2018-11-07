@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/superiror_two_rlayout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@android:color/white">
+
+    <ViewFlipper
+        android:id="@+id/marquee_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autoStart="true"
+        android:background="#fff"
+        android:flipInterval="2500"
+        android:inAnimation="@anim/anim_marquee_in"
+        android:outAnimation="@anim/anim_marquee_out">
+
+    </ViewFlipper>
+</RelativeLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="263dp"
+    android:layout_height="521dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="263dp"
+        android:layout_height="467dp"
+        android:background="@drawable/shape_sg_cjk_bg">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/head"
+            android:layout_width="263dp"
+            android:layout_height="186dp"
+            app:riv_corner_radius_top_left="3dp"
+            app:riv_corner_radius_top_right="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/xxcjkdbbjt"/>
+
+
+
+        <RelativeLayout
+            android:id="@+id/base_info"
+            android:layout_width="243dp"
+            android:layout_height="124dp"
+            android:layout_marginTop="115dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_sg_fff_3_bg">
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/originator"
+                android:textSize="12sp"
+                android:text=""
+                android:layout_marginTop="38dp"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_below="@+id/nickname"
+                android:layout_marginTop="12dp"
+                android:textSize="14sp"
+                android:textColor="@color/originator"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text=""
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/day_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/video_title"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="9dp"
+                android:textSize="11sp"
+                android:text="学习进度0/0天"
+                android:layout_marginTop="8dp"/>
+
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/video_title"
+                android:layout_below="@+id/title"
+                android:layout_marginRight="9dp"
+                android:textSize="11sp"
+                android:layout_alignParentRight="true"
+                android:text="2018-01-01"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/avatar"
+            android:layout_width="60.5dp"
+            android:layout_height="60.5dp"
+            app:riv_oval="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="-30dp"
+            android:src="@drawable/ivnull"
+            android:padding="0.5dp"
+            android:background="@drawable/shape_sg_cjk_avatar_bg"
+            android:layout_alignTop="@+id/base_info"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/today_study"
+            android:layout_width="117.5dp"
+            android:layout_height="74dp"
+            android:layout_below="@+id/base_info"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/shape_sg_cjk_data_bg">
+
+            <TextView
+                android:id="@+id/today_time"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="32sp"
+                android:textColor="#F5A623"
+                android:text="0"/>
+            
+            <View
+                android:layout_width="60dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/shape_sg_cjk_line"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:text="今日学习（分钟）"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="117.5dp"
+            android:layout_height="74dp"
+            android:layout_below="@+id/base_info"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/shape_sg_cjk_data_bg">
+            <TextView
+                android:id="@+id/all_time"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="32sp"
+                android:textColor="#F5A623"
+                android:text="0"/>
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/shape_sg_cjk_line"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:text="累计学习（分钟）"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/qr_info"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_below="@+id/today_study"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_sg_cjk_qr_bg">
+
+            <ImageView
+                android:id="@+id/qr"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/sg_home_qr"
+                android:background="#fff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/qr"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:textSize="12sp"
+                android:textColor="#fff"
+                android:text="勺子课堂学习小组"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/qr"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentBottom="true"
+                android:textSize="12sp"
+                android:textColor="#fff"
+                android:text="邀请一起做学霸"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qr_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/sg_logo"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/wx"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/weixinfenxiang"/>
+
+    <ImageView
+        android:id="@+id/pyq"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@+id/content"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/pengyouquanfenxiang"/>
+</RelativeLayout>

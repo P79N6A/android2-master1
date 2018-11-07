@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="286dp"
+    android:layout_height="416dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="296dp"
+        android:orientation="vertical"
+        android:background="@drawable/dig_t_corner_8dc63f">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:text="@string/apply_success"/>
+        
+        <ImageView
+            android:id="@+id/qr_img"
+            android:layout_width="154dp"
+            android:layout_height="154dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/apply_bt_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:text="@string/add_service"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/apply_success_info"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/shape_share_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#282828"
+            android:layout_marginRight="8dp"
+            android:text="微信ID：Shaobusiid"/>
+
+        <TextView
+            android:layout_width="54dp"
+            android:layout_height="24dp"
+            android:background="@drawable/apply_share_bg"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:text="@string/copy"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="26dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/bm_closebutton"/>
+</LinearLayout>

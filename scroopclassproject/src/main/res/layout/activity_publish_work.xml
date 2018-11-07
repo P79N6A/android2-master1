@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_publish_work"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    tools:context="com.wh.wang.scroopclassproject.newproject.ui.activity.PublishWorkActivity">
+    <include layout="@layout/titlebarback_new"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@+id/titlebarbackss"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:textSize="13sp"
+        android:textColor="#282828"
+        android:text=""
+        android:singleLine="true"
+        android:ellipsize="end"/>
+
+    <com.sendtion.xrichtext.RichTextEditor
+        android:id="@+id/et_new_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/bottom_menu"
+        android:textSize="13sp"
+        android:textColor="#424242"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/title"
+        android:background="#f2f4f7"/>
+    
+    <RelativeLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fefefe"
+        android:clickable="true"
+        android:layout_alignParentBottom="true">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f2f4f7"/>
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:src="@drawable/change_carme"/>
+    </RelativeLayout>
+</RelativeLayout>

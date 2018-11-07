@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wh.wang.scroopclassproject.newproject.ui.activity.CasebookInfoActivity">
+    <include layout="@layout/titlebarback_new" />
+
+    <ScrollView
+        android:id="@+id/invite_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/titlebarbackss">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="50dp">
+
+
+            <FrameLayout
+                android:id="@+id/invite_state_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/invite_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/invite_state_layout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/alj_nrbg">
+
+                <TextView
+                    android:id="@+id/invite_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/invite_record" />
+
+                <RelativeLayout
+                    android:id="@+id/invite_list_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/invite_record">
+
+                    <ImageView
+                        android:id="@+id/no_data_icon"
+                        android:layout_width="162dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/alj_qspic" />
+
+                    <TextView
+                        android:id="@+id/no_data_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/no_data_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:text="需要好友助力，去提醒TA"
+                        android:textColor="#a5a5a5"
+                        android:textSize="14sp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/invite_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+
+                        android:visibility="gone">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <TextView
+                        android:id="@+id/continue_check"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignLeft="@+id/invite_list"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignRight="@+id/invite_list"
+                        android:background="@drawable/alj_maskpic"
+                        android:gravity="bottom|center_horizontal"
+                        android:paddingBottom="10dp"
+                        android:text="上下滑动继续查看"
+                        android:textColor="#fff"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/create_invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/invite_list_container"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="生成邀请链接"
+                    android:textColor="@color/main_color"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/action_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/invite_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/action_rule"
+                android:textColor="#010101"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/rule_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/action_rule"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:text="@string/rule_1"
+                android:textColor="#7f7f7f"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/rule_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rule_1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="14dp"
+                android:text="@string/rule_2"
+                android:textColor="#7f7f7f"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/rule_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rule_2"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="14dp"
+                android:text="@string/rule_3"
+                android:textColor="#7f7f7f"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

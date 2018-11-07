@@ -1,0 +1,129 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.wh.wang.scroopclassproject.newproject.fun_class.study_group.fragment.frag2_0.SGRankFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/rank_info"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_sg_f2f4f7_bg"
+            android:gravity="center"
+            android:text="0人累计打卡中，0人已出局"
+            android:textColor="@color/video_title_v"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/challenging_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_below="@+id/rank_info"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="挑战中"
+            android:textColor="@color/video_title_v"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/challenging_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/challenging_tv"
+            android:layout_alignTop="@+id/challenging_tv"
+            android:layout_toRightOf="@+id/challenging_tv"
+            android:gravity="center"
+            android:text="（0人）"
+            android:textColor="@color/video_title"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/challenge_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/challenging_tv"
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/challenge_all"
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/challenge_list"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_sg_main_oval_bg"
+            android:gravity="center"
+            android:text="查看全部"
+            android:visibility="invisible"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/out_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_below="@+id/challenge_all"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="已出局"
+            android:textColor="@color/video_title_v"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/out_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/out_tv"
+            android:layout_alignTop="@+id/out_tv"
+            android:layout_toRightOf="@+id/out_tv"
+            android:gravity="center"
+            android:text="（0人）"
+            android:textColor="@color/video_title"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/out_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/out_tv"
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/out_all"
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/out_list"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_sg_main_oval_bg"
+            android:gravity="center"
+            android:text="查看全部"
+            android:visibility="invisible"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</ScrollView>

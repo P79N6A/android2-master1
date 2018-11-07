@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:background="#fff">
+    <TextView
+        android:id="@+id/rank_num"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/video_title_v"
+        android:text="1"/>
+    
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:riv_oval="true"
+        android:src="@drawable/ivnull"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:textColor="@color/video_title_v"
+        android:text="李维ios"
+        android:singleLine="true"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/video_title_v"
+        android:textSize="14sp"
+        android:text="连续打卡11天"/>
+</LinearLayout>

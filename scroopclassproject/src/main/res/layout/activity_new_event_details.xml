@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_event_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F4F7"
+    tools:context="com.wh.wang.scroopclassproject.newproject.ui.activity.NewEventDetailsActivity">
+    <include layout="@layout/titlebarback_new2"/>
+
+
+    <ScrollView
+        android:id="@+id/event_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/event_detail_bottom"
+        android:layout_below="@+id/titlebarbackss"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/event_details_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/event_content_shape"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="18dp">
+                    <TextView
+                        android:id="@+id/event_detail_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/titlebarbacks"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:text=""
+                        android:textColor="#282828"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/event_detail_host"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:layout_below="@+id/event_detail_title"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="主办方:  "
+                        android:textColor="#AEB4BC"
+                        android:textSize="12sp"/>
+
+                    <LinearLayout
+                        android:id="@+id/event_detail_date_rel"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:layout_below="@+id/event_detail_host">
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/kefucjshijian"/>
+                        <TextView
+                            android:id="@+id/event_detail_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#4b4b4b"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/event_detail_address_rel"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:layout_below="@+id/event_detail_date_rel">
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/kefujdingwei"/>
+                        <TextView
+                            android:id="@+id/event_detail_place"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/event_detail_date_rel"
+                            android:text=""
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#4b4b4b"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/event_detail_address_rel"
+                        android:background="#F2F4F7"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="86dp"
+                        android:layout_below="@+id/event_detail_address_rel">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+                            <com.wh.wang.scroopclassproject.newproject.view.OldPriceTextView
+                                android:id="@+id/old_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:text="普通价: ¥"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="#282828"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:id="@+id/event_detail_vip_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/old_price"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:text="会员价: ¥"
+                                android:textColor="#282828"
+                                android:textSize="14sp"/>
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/vip_imme"
+                            android:layout_width="92dp"
+                            android:layout_height="28dp"
+                            android:gravity="center"
+                            android:text="立即成为会员"
+                            android:textSize="11sp"
+                            android:textColor="#fff"
+                            android:visibility="gone"
+                            android:layout_marginRight="15dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/imm_vip_shape"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+           <WebView
+               android:id="@+id/event_detail_wb"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_below="@+id/event_details_content"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_marginTop="10dp"></WebView>
+        </RelativeLayout>
+    </ScrollView>
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="65dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"
+        android:src="@drawable/phoneicon"/>
+    <LinearLayout
+        android:id="@+id/event_detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:paddingRight="18dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/kefu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@drawable/kefuicon"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:text="客服"/>
+        <TextView
+            android:id="@+id/apply"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="立即报名"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:visibility="gone"
+            android:background="@drawable/apply_share_bg"
+            android:textColor="#fff"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/vip_aisle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="开通会员"
+            android:background="@drawable/imm_vip_shape"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginLeft="18dp"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</RelativeLayout>

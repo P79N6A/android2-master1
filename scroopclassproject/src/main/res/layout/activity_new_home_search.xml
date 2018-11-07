@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/new_search_title"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/new_search_cancel"
+            android:background="@drawable/new_search_edit_bg_shape">
+            <EditText
+                android:id="@+id/new_search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:hint="@string/new_search_hint"
+                android:layout_toLeftOf="@+id/del_key"
+                android:singleLine="true"
+                android:background="@null"
+                android:imeOptions="actionSearch"
+                android:textSize="12sp"
+                android:paddingLeft="15dp"/>
+
+            <ImageView
+                android:id="@+id/del_key"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/search_del"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/new_search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/cancel"
+            android:textSize="16sp"
+            android:textColor="#282828"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_below="@+id/new_search_title">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:id="@+id/search_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <RelativeLayout
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <LinearLayout
+                    android:id="@+id/search_result_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/all"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:text="全部"
+
+                        android:textColor="@color/main_color"/>
+                    <TextView
+                        android:id="@+id/course"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:text="课程"
+                        android:textColor="@color/video_title_v" />
+                    <TextView
+                        android:id="@+id/essay"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:text="文章"
+                        android:textColor="@color/video_title_v"/>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/line"
+                    android:layout_width="128dp"
+                    android:layout_height="2dp"
+                    android:layout_alignBottom="@+id/search_result_title">
+                    <View
+                        android:layout_width="32dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center"
+                        android:background="@color/main_color"/>
+                </FrameLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/result_vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/search_result_title">
+
+                </android.support.v4.view.ViewPager>
+            </RelativeLayout>
+
+            <include
+                layout="@layout/layout_search_empty"
+                android:visibility="gone"/>
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:id="@+id/hot_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/search_result">
+            <RelativeLayout
+                android:id="@+id/hot_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/hot_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/video_title_v"
+                    android:text="@string/hot_search"/>
+
+
+                <com.wh.wang.scroopclassproject.newproject.view.SearchHotLabelView
+                    android:id="@+id/hot_labels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hot_title"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+                </com.wh.wang.scroopclassproject.newproject.view.SearchHotLabelView>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/search_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/cut_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#F2F4F7"/>
+
+                <TextView
+                    android:id="@+id/history_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/cut_line"
+                    android:textColor="@color/video_title_v"
+                    android:text="@string/new_search_history_tv"/>
+
+                <ImageView
+                    android:id="@+id/clear_history"
+                    android:layout_width="20dp"
+                    android:layout_height="42dp"
+                    android:layout_alignTop="@+id/history_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/clear_history"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/history_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:layout_below="@+id/history_title">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

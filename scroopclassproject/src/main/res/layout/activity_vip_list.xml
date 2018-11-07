@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vip_banner" />
+
+        <RelativeLayout
+            android:id="@+id/know_vip"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/banner"
+            android:layout_marginTop="20dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/know_bg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/xinzhi"
+                app:riv_corner_radius="3dp" />
+
+            <TextView
+                android:id="@+id/know_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:text="新知会员"
+                android:textColor="@color/video_title_v"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/know_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:text="899元/年"
+                android:textColor="#D95C5D"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/open_know"
+                android:layout_width="64dp"
+                android:layout_height="26dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="19dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/shape_xz_vip_open_bg"
+                android:gravity="center"
+                android:text="开通"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/know_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/know_tv"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:text="获得新知，快人一步"
+                android:textColor="@color/video_title_v"
+                android:textSize="12sp" />
+
+
+            <LinearLayout
+                android:id="@+id/know_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/know_info"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:background="@drawable/shape_xz_vip_open_bg"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="600节线上课程免费学"
+                    android:textColor="#D95C5D"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/know_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/know_tv"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/know_tv"
+                android:text=""
+                android:textColor="@color/video_title"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_vip"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/know_vip"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/action_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/xingdong"
+                app:riv_corner_radius="3dp" />
+            <TextView
+                android:id="@+id/action_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:text="行动会员"
+                android:textColor="@color/video_title_v"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/action_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/action_tv"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/action_tv"
+                android:text=""
+                android:textColor="@color/video_title"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/action_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:text="3999元/年"
+                android:layout_alignParentRight="true"
+                android:textColor="#1B1B5F"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/open_action"
+                android:layout_width="64dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/action_price"
+                android:background="@drawable/shape_xd_vip_open_bg"
+                android:gravity="center"
+                android:text="开通"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/action_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/action_tv"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:text="先发于人，行动落地"
+                android:textColor="@color/video_title_v"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/action_des_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/action_info"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:background="@drawable/shape_xz_vip_open_bg"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="600节线上课程免费学"
+                    android:textColor="#D95C5D"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/action_des_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/action_des_1"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:background="@drawable/shape_xz_vip_open_bg"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="线下课每期立省2000元"
+                    android:textColor="#D95C5D"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

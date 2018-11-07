@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wh.wang.scroopclassproject.newproject.fun_class.gift_bag.GiftBagActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="44dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/xyhzclbbanner" />
+
+            <TextView
+                android:id="@+id/coupon_hint"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_below="@+id/head"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.2"
+                android:text="恭喜您获得新人专享优惠券\n请在 账号-我的优惠券 中查看"
+                android:textColor="@color/video_title_v"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/coupon_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coupon_hint"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_alignLeft="@+id/coupon_head"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="36dp"
+                    android:background="@drawable/zyhq3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/coupon_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:layout_marginTop="22dp"
+                        android:text="新用户专用优惠券"/>
+
+                    <TextView
+                        android:id="@+id/coupon_time_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/coupon_title"
+                        android:layout_alignRight="@+id/coupon_title"
+                        android:textSize="14sp"
+                        android:textColor="#fff"
+                        android:gravity="center"
+                        android:layout_below="@+id/coupon_title"
+                        android:layout_marginTop="4dp"
+                        android:text="有效期至：\n2018年9月30日"/>
+
+                    <TextView
+                        android:id="@+id/coupon_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="56dp"
+                        android:textColor="#fff"
+                        android:textSize="40sp"
+                        android:layout_marginTop="14dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:text="¥200"/>
+
+
+                    <TextView
+                        android:id="@+id/coupon_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20dp"
+                        android:layout_alignLeft="@+id/coupon_price"
+                        android:layout_alignRight="@+id/coupon_price"
+                        android:gravity="center"
+                        android:text="共3张"/>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/coupon_head"
+                    android:layout_width="127dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="36dp"
+                    android:background="@drawable/yhqwaike"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="专用优惠券"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/coupon_time_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="有效至：\n2018年9月30日"
+                        android:textColor="#fff"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/course_hint"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_below="@+id/coupon_content"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.2"
+                android:text="恭喜您获得新人专享优惠券\n请在 账号-我的优惠券 中查看"
+                android:textColor="@color/video_title_v"
+                android:textSize="16sp" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/course_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/course_hint">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/all_course"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F6A724"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:text="查看课程"/>
+</RelativeLayout>

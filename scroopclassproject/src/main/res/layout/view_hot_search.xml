@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="26dp">
+    <TextView
+        android:id="@+id/hot_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:background="@drawable/new_search_edit_bg_shape"
+        android:layout_below="@+id/new_search_hot"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#282828"
+        android:textSize="13sp"
+        android:layout_marginRight="6dp"
+        android:text="@string/support" />
+</RelativeLayout>

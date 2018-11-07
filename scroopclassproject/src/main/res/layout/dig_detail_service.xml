@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:singleLine="true"
+        android:maxEms="13"
+        android:textSize="18sp"
+        android:textColor="@color/video_title_v"
+        android:textStyle="bold"
+        android:text="尊贵的新知会员，"/>
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:textColor="@color/video_title_v"
+        android:textSize="18sp"
+        android:text="您的专属课程顾问Lisa将为您服务"/>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:layout_below="@+id/hint"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/zhuanshukechengguwen">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/avatar"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ivnull"
+            app:riv_corner_radius="3dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:text="专属顾问：Lisa"
+            android:layout_alignTop="@+id/avatar"
+            android:layout_toRightOf="@+id/avatar"/>
+
+        <TextView
+            android:id="@+id/wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/avatar"
+            android:layout_alignBottom="@+id/avatar"
+            android:layout_alignTop="@+id/avatar"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:text="微信号：wapshaoziketang"
+            android:gravity="center_vertical"
+            android:textColor="#f2f4f7"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/avatar"
+            android:layout_alignBottom="@+id/avatar"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:text="工作时间：09:00-18:00（周一至周五"
+            android:textColor="#f2f4f7"/>
+
+
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/originator"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:background="@drawable/shape_sg_fff_3_bg"
+            android:text="非工作时间，您可通过微信联系"
+            android:layout_below="@+id/avatar"/>
+
+        <TextView
+            android:id="@+id/copy"
+            android:layout_alignTop="@+id/des"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_toRightOf="@+id/des"
+            android:layout_marginRight="10dp"
+            android:textSize="12sp"
+            android:background="@drawable/shape_fx_wx_bg"
+            android:text="复制微信号"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/call"
+        android:layout_width="270dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:text="一键呼叫"
+        android:background="@drawable/yijianhujiao"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

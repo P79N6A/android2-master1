@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/shape_sg_fff_3_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/weijirutu"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/video_title"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="暂无打卡中的课程\n快去挑选感兴趣的课程加入学习吧"/>
+</LinearLayout>

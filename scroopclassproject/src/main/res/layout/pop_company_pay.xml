@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingTop="20dp">
+
+    <RelativeLayout
+        android:id="@+id/pay_course_title"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="#f2f4f7">
+
+        <ImageView
+            android:id="@+id/pay_title_icon"
+            android:layout_width="104dp"
+            android:layout_height="58dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ivnull"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="44dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/pay_title_icon"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:text="外卖选址，一流商圈，三流租金司法会计很骄傲黄金客户即可但是后就开始"
+            android:textColor="#282828"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/pay_course_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/pay_title_icon"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="399.00元"
+            android:textColor="#FF731E"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/taocan_1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_below="@+id/pay_course_title">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/taocan_1_icon"-->
+    <!--android:layout_width="16dp"-->
+    <!--android:layout_height="16dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:src="@drawable/qiye_pay_taocan"/>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_toRightOf="@+id/taocan_1_icon"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:text="按套餐购买"-->
+    <!--android:textSize="12sp"-->
+    <!--android:textColor="#282828"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/taocan_2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_toRightOf="@+id/taocan_1"-->
+    <!--android:layout_below="@+id/pay_course_title">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/taocan_2_icon"-->
+    <!--android:layout_width="16dp"-->
+    <!--android:layout_height="16dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:src="@drawable/qiye_pay_untancan"/>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_toRightOf="@+id/taocan_2_icon"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:text="按人数购买"-->
+    <!--android:textSize="12sp"-->
+    <!--android:textColor="#282828"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/pay_course_title"
+        android:layout_marginLeft="15dp"
+        android:text="请选择套餐类型"
+        android:gravity="center_vertical"
+        android:textColor="#282828"
+        android:textSize="12sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/hint"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#F2F4F7"/>
+
+    <RelativeLayout
+        android:id="@+id/type_select_content"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/hint">
+
+        <RelativeLayout
+            android:id="@+id/pay_per_num"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/pay_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="按人数购买"
+                android:textColor="#282828"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="28dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jia"/>
+
+            <TextView
+                android:id="@+id/pay_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/add"
+                android:gravity="center"
+                android:minWidth="28dp"
+                android:text="1"
+                android:textColor="#282828"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/subtract"
+                android:layout_width="28dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/pay_num"
+                android:src="@drawable/jian"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pay_set_meal"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/pay_type_1"
+                android:layout_width="82dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/imm_vip_shape"
+                android:gravity="center"
+                android:text="5-10人"
+                android:textColor="@color/list_normal"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/pay_type_2"
+                android:layout_width="82dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/pay_type_1"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/pay_type_1"
+                android:background="@drawable/apply_examine_bg"
+                android:gravity="center"
+                android:text="15-20人"
+                android:textColor="#282828"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/pay_type_3"
+                android:layout_width="82dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/pay_type_2"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/pay_type_2"
+                android:background="@drawable/apply_examine_bg"
+                android:gravity="center"
+                android:text="15-20人"
+                android:textColor="#282828"
+                android:textSize="13sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/type_select_content"
+        android:background="#F2F4F7"/>
+
+    <RelativeLayout
+        android:id="@+id/pay_weichat"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/type_select_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/weichat_icon"
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/weichatpay_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/weichat_icon"
+            android:gravity="center_vertical"
+            android:text="微信"
+            android:textColor="#282828"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/weichat_select"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/qiye_pay_select"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pay_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/pay_weichat"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/alipay_icon"
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/alipay_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/alipay_icon"
+            android:gravity="center_vertical"
+            android:text="支付宝"
+            android:textColor="#282828"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/alipay_select"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/qiye_pay_unselect"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pay_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/pay_alipay"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/transfer_icon"
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/zhifu_zz"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/transfer_icon"
+            android:gravity="center_vertical"
+            android:text="对公转账"
+            android:textColor="#282828"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/transfer_select"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/qiye_pay_unselect"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#F2F4F7"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/reminder"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_below="@+id/pay_transfer"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/reminder"
+        android:textColor="#AEB2BF"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/reminder">
+
+        <TextView
+            android:id="@+id/pay_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f2f4f7"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#556378"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/pay_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFAD1E"
+            android:gravity="center"
+            android:text="确认购买"
+            android:textColor="#fff"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</RelativeLayout>

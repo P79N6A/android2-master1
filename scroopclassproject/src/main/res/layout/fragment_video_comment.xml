@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                tools:context="com.wh.wang.scroopclassproject.newproject.ui.fragment.video_info_frag.VideoCommentFragment">
+
+    <RelativeLayout
+        android:id="@+id/share_comment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f2f4f7">
+
+        <TextView
+            android:id="@+id/comment_share_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="写下学习心得，记录思考历程"
+            android:textColor="#49546d"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/share_comment"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/comment_input"
+        android:layout_below="@+id/share_comment">
+
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:id="@+id/comment_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f4f7"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+        <EditText
+            android:id="@+id/comment_edit"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:background="#FFFFFF"
+            android:gravity="left|center_vertical"
+            android:maxLength="100"
+            android:maxLines="6"
+            android:hint="请输入心得"
+            android:minHeight="40dp"
+            android:layout_toLeftOf="@+id/send_comment"
+            android:textColor="@color/vedio_cap" />
+        <!-- 留言按钮 -->
+        <Button
+            android:id="@+id/send_comment"
+            android:layout_width="60dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#16bc6e"
+            android:text="提交"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

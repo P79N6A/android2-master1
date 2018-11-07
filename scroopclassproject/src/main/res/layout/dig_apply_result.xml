@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="318dp"
+              android:layout_height="320dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="264dp"
+        android:orientation="vertical"
+        android:background="@drawable/event_dig_bg">
+
+        <ImageView
+            android:id="@+id/apply_result_icon"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/apply_dig_success"/>
+
+        <TextView
+            android:id="@+id/apply_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="11dp"
+            android:textColor="#282828"
+            android:textSize="16sp"
+            android:text="报名成功"/>
+        <TextView
+            android:id="@+id/apply_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="#556378"
+            android:textSize="12sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="请注意上课时间和地点,千万不要迟到哦~"/>
+        
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="262dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/apply_share_bg"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:text="查看详情"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="26dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/bm_closebutton"/>
+</LinearLayout>

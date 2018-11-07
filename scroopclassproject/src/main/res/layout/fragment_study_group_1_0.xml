@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <TextView
+        android:id="@+id/status_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#fff"
+        android:textSize="14sp"
+        android:textColor="@color/video_title_v"
+        android:gravity="center"
+        android:text="学习小组"/>
+    <ScrollView
+        android:id="@+id/home_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/status_title">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="305dp"
+                android:background="@drawable/sg_beijing"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/home_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="130dp"-->
+                <!--android:textColor="#fff"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text=""-->
+                <!--android:layout_marginRight="70dp"-->
+                <!--android:layout_marginLeft="70dp"-->
+                <!--android:maxLines="2"-->
+                <!--android:ellipsize="end"-->
+                <!--android:textSize="24sp"/>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/sg_home_course_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:background="#00ffffff"
+                android:overScrollMode="never">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <TextView
+                android:id="@+id/action_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_below="@+id/sg_home_course_list"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/hdgz"
+                android:gravity="center"
+                android:textColor="@color/originator"
+                android:textSize="16sp"
+                android:text="@string/rule_of_event"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="98dp"
+                android:layout_below="@+id/action_rule"
+                android:src="@drawable/xuexixiaozuguize"/>
+
+            <!--<TextView-->
+            <!--android:id="@+id/action_rule_1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="12sp"-->
+            <!--android:layout_below="@+id/action_rule"-->
+            <!--android:paddingLeft="32dp"-->
+            <!--android:paddingRight="32dp"-->
+            <!--android:layout_marginBottom="84dp"-->
+            <!--android:lineSpacingMultiplier="1.2"-->
+            <!--android:textColor="@color/originator"-->
+            <!--android:text=""/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/action_rule_2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textColor="@color/originator"-->
+            <!--android:layout_below="@+id/action_rule_1"-->
+            <!--android:lineSpacingMultiplier="1.2"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:layout_marginLeft="32dp"-->
+            <!--android:layout_marginRight="32dp"-->
+            <!--android:text="2.手机按到家啊可能打开觉得那绝对是你，集散地看大家的那款刷卡的那"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/action_rule_3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textColor="@color/originator"-->
+            <!--android:layout_below="@+id/action_rule_2"-->
+            <!--android:lineSpacingMultiplier="1.2"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:layout_marginLeft="32dp"-->
+            <!--android:layout_marginRight="32dp"-->
+            <!--android:layout_marginBottom="84dp"-->
+            <!--android:text="3.每日秒杀的礼品数量有限，秒完即止。秒杀礼品库存数量"/>-->
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/my_study_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/sg_bottom_bt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+
+</RelativeLayout>

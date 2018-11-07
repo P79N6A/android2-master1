@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/sure_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#5d5d5d"
+        android:textSize="18sp"
+        android:text="请确认支付宝账号是否正确"/>
+
+
+    <TextView
+        android:id="@+id/sure_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sure_title"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="#333740"
+        android:text="账户名："
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/sure_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sure_name"
+        android:layout_alignLeft="@+id/sure_name"
+        android:textSize="18sp"
+        android:textColor="#333740"
+        android:text="账号："
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/sure_no"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/make_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/apply_share_bg_3dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"
+            android:text="确定"/>
+
+        <TextView
+            android:id="@+id/alter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bind_right_bg"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:text="修改"/>
+    </LinearLayout>
+</RelativeLayout>

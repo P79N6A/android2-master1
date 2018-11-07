@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    tools:context="com.wh.wang.scroopclassproject.newproject.ui.fragment.mystudy_frag.StudyRecordFragment">
+
+    <RelativeLayout
+        android:id="@+id/record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/record_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:text="管理"
+            android:layout_alignTop="@+id/finish_down_manager"
+            android:layout_alignBottom="@+id/finish_down_manager"
+            android:paddingLeft="15dp"
+            android:gravity="center"
+            android:textColor="#a3accd"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/record_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:text="筛选"
+            android:gravity="center"
+            android:textColor="#a3accd"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/record_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/record_screen"
+            android:layout_above="@+id/finish_record_menu">
+        </android.support.v7.widget.RecyclerView>
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/no_data"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="138dp"-->
+            <!--android:src="@drawable/kong"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_marginTop="120dp"/>-->
+        <LinearLayout
+            android:id="@+id/finish_record_menu"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/all_select"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="全选"
+                android:gravity="center"
+                android:textColor="#282828"
+                android:textSize="16sp"
+                android:background="#fff"/>
+
+            <TextView
+                android:id="@+id/delete_select"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="删除"
+                android:gravity="center"
+                android:textColor="#282828"
+                android:textSize="16sp"
+                android:background="#fff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/no_login"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="138dp"-->
+        <!--android:src="@drawable/weidenglu"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_marginTop="120dp"/>-->
+</RelativeLayout>

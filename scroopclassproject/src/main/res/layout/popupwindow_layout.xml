@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="140dp"
+    android:background="@drawable/qipaok">
+
+    <RelativeLayout
+        android:id="@+id/pop_all"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="全部"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#464b4e" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pop_study"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/pop_all">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="在学课程"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#464b4e" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pop_finiish"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/pop_study">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="已学课程"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

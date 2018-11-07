@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <TextView
+        android:id="@+id/search_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/item_del"
+        android:textColor="@color/video_title_v"
+        android:gravity="center_vertical"
+        android:textSize="14sp"/>
+    
+    
+    <ImageView
+        android:id="@+id/item_del"
+        android:layout_width="32dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="12dp"
+        android:src="@drawable/search_del"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f2f4f7"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

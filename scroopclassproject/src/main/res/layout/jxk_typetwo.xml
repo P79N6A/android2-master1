@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/type_two_rlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/type_two_rlayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/type_two_iv_line"
+            android:layout_width="4dp"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shuxian" />
+
+        <TextView
+            android:id="@+id/type_two_iv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/type_two_iv_line"
+            android:text="热门活动"
+            android:textColor="#282828"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/type_two_tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="更多"
+            android:textColor="#9eadc3"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/type_two_llayout_one"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_below="@+id/type_two_rlayout_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/type_two_rlayout_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/type_two_iv_one"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ivnull" />
+
+            <TextView
+                android:id="@+id/type_two_title_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type_two_iv_one"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="员工幸福是一切餐厅经营的原点"
+                android:textColor="#282828"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/type_two_maintalk_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:text="主讲"
+                android:textColor="@color/super_main_press"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/type_two_study_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:text="234已学"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/type_two_rlayout_two"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/type_two_iv_two"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ivnull" />
+
+            <TextView
+                android:id="@+id/type_two_title_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type_two_iv_two"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="员工幸福是一切餐厅经营的原点"
+                android:textColor="#282828"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/type_two_maintalk_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:text="主讲"
+                android:textColor="@color/super_main_press"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/type_two_study_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/superior_item_rlayout_marginbottom"
+                android:text="234已学"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/type_two_llayout_two"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_below="@+id/type_two_llayout_one"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/type_two_rlayout_three"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/type_two_iv_three"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:src="@drawable/ivnull"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/type_two_title_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type_two_iv_three"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="员工幸福是一切餐厅经营的原点"
+                android:textColor="#282828"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/type_two_maintalk_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:text="主讲"
+                android:textColor="@color/super_main_press"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/type_two_study_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/superior_item_rlayout_marginbottom"
+                android:text="234已学"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/type_two_rlayout_four"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/type_two_iv_four"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ivnull" />
+
+            <TextView
+                android:id="@+id/type_two_title_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type_two_iv_four"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="员工幸福是一切餐厅经营的原点"
+                android:textColor="#282828"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/type_two_maintalk_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:text="主讲"
+                android:textColor="@color/super_main_press"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/type_two_study_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/superior_item_rlayout_marginbottom"
+                android:text="234已学"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

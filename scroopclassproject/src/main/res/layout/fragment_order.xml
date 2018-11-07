@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="158dp"
+    android:background="@color/main_color"
+    tools:context="com.wh.wang.scroopclassproject.newproject.ui.fragment.casebook_frag.OrderFragment">
+
+    <ImageView
+        android:id="@+id/wait_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="92dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/alj_stpic"/>
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/wait_icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="19sp"
+            android:text="@string/order_title_1"/>
+
+        <TextView
+            android:id="@+id/other_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textColor="#dcfab2"
+            android:text="@string/order_hint_1"/>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/hint_body"
+        android:layout_width="132dp"
+        android:layout_height="33dp"
+        android:visibility="gone"
+        android:layout_below="@+id/body"
+        android:layout_alignLeft="@+id/body"
+        android:layout_marginTop="4dp">
+        <ImageView
+            android:id="@+id/hint"
+            android:layout_width="132dp"
+            android:layout_height="33dp"
+            android:src="@drawable/alj_tsqppic"/>
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="22dp"
+            android:layout_height="24dp"
+            android:layout_alignRight="@+id/hint"
+            android:src="@drawable/alj_tsqppic_closebutton"
+            android:paddingRight="15dp"
+            android:layout_marginBottom="2dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

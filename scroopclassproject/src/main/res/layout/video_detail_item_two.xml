@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_detail_item_rl_two"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@android:color/white">
+
+
+    <ImageView
+        android:id="@+id/video_item_two_rlayout"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/yuandian">
+
+    </ImageView>
+    <RelativeLayout
+        android:id="@+id/cate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/video_item_two_rlayout"
+        android:layout_toLeftOf="@+id/other">
+        <TextView
+            android:id="@+id/video_item_two_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:text=""
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:textColor="#282828"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/cate_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/video_item_two_tv"
+            android:textColor="#9eadc3"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:text=""/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/other"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/no_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:text="待上线"
+            android:textColor="#8B8F97"/>
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/shape_new_course_radius_4_bg"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="新"
+            android:visibility="gone"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/work"
+            android:layout_width="61dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="作业"
+            android:textSize="11sp"
+            android:visibility="gone"
+            android:textColor="#C4282828"
+            android:background="@drawable/apply_examine_bg"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f2f4f7" />
+
+</RelativeLayout>

@@ -1,0 +1,213 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:background="#fff">
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        android:orientation="vertical">
+
+        <com.wh.wang.scroopclassproject.newproject.view.LRLineTextView
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/originator"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="打卡微信群"/>
+
+        <TextView
+            android:id="@+id/qr_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginLeft="48dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="报名后，查看微信二维码，进群监督学习"
+            android:textSize="12sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/video_title_v"/>
+
+        <ImageView
+            android:id="@+id/qr"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ivnull"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerCrop"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/qr_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:visibility="gone"-->
+            <!--android:textColor="@color/originator"-->
+            <!--android:textSize="14sp"-->
+            <!--android:text="扫码加关注"/>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#f2f4f7"/>
+
+        <com.wh.wang.scroopclassproject.newproject.view.LRLineTextView
+            android:layout_width="178dp"
+            android:layout_height="44dp"
+            android:textSize="16sp"
+            android:textColor="@color/video_title_v"
+            android:gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_gravity="center"
+            android:text="打卡规则"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f2f4f7"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/xuexixiaozuguize"/>
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rule_1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:paddingRight="30dp"-->
+            <!--android:paddingLeft="30dp">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/rule_1_img"-->
+                <!--android:layout_width="24dp"-->
+                <!--android:layout_height="24dp"-->
+                <!--android:src="@drawable/pay"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:layout_marginRight="10dp"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/rule_1_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="16sp"-->
+                <!--android:textColor="@color/video_title_v"-->
+                <!--android:layout_alignTop="@+id/rule_1_img"-->
+                <!--android:layout_alignBottom="@+id/rule_1_img"-->
+                <!--android:layout_toRightOf="@+id/rule_1_img"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="支付契约金，加入跑班"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignLeft="@+id/rule_1_title"-->
+                <!--android:layout_below="@+id/rule_1_title"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:textColor="@color/originator"-->
+                <!--android:textSize="12sp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="挑选一个合适的班级，支付契约金加入班级"/>-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rule_2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingRight="30dp"-->
+            <!--android:paddingLeft="30dp">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/rule_2_img"-->
+                <!--android:layout_width="24dp"-->
+                <!--android:layout_height="24dp"-->
+                <!--android:src="@drawable/run"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:layout_marginRight="10dp"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/rule_2_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="16sp"-->
+                <!--android:textColor="@color/video_title_v"-->
+                <!--android:layout_alignTop="@+id/rule_2_img"-->
+                <!--android:layout_alignBottom="@+id/rule_2_img"-->
+                <!--android:layout_toRightOf="@+id/rule_2_img"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="支付契约金，加入跑班"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignLeft="@+id/rule_2_title"-->
+                <!--android:layout_below="@+id/rule_2_title"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:textColor="@color/originator"-->
+                <!--android:textSize="12sp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="挑选一个合适的班级，支付契约金加入班级"/>-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rule_3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingRight="30dp"-->
+            <!--android:paddingLeft="30dp">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/rule_3_img"-->
+                <!--android:layout_width="24dp"-->
+                <!--android:layout_height="24dp"-->
+                <!--android:src="@drawable/bonus"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:layout_marginRight="10dp"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/rule_3_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="16sp"-->
+                <!--android:textColor="@color/video_title_v"-->
+                <!--android:layout_alignTop="@+id/rule_3_img"-->
+                <!--android:layout_alignBottom="@+id/rule_3_img"-->
+                <!--android:layout_toRightOf="@+id/rule_3_img"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="支付契约金，加入跑班"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignLeft="@+id/rule_3_title"-->
+                <!--android:layout_below="@+id/rule_3_title"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:textColor="@color/originator"-->
+                <!--android:textSize="12sp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="挑选一个合适的班级，支付契约金加入班级"/>-->
+        <!--</RelativeLayout>-->
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/qdshibai"
+    tools:context="com.wh.wang.scroopclassproject.newproject.ui.fragment.scan_resule_frag.FailFragment">
+
+    <TextView
+        android:id="@+id/flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="237dp"
+        android:textSize="28sp"
+        android:textColor="@color/originator"
+        android:text="二维码无效"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flag"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/video_title_v"
+        android:text="请协助用户使用浏览器的刷新页面\n功能来获取新二维码或用户确认\n是否使用本节课的签到二维码"/>
+</RelativeLayout>

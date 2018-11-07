@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="64dp">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#282828"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:singleLine="true"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:ellipsize="end"
+        android:textColor="#282828"
+        android:layout_weight="1"/>
+
+    <FrameLayout
+        android:id="@+id/o_price_frag"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+        <com.wh.wang.scroopclassproject.newproject.view.OldPriceTextView
+            android:id="@+id/o_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:ellipsize="end"
+            android:textColor="#282828"
+            android:lines="1"
+            android:layout_weight="1"/>
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/v_price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:textColor="#fd733d"
+        android:layout_weight="1"/>
+</LinearLayout>

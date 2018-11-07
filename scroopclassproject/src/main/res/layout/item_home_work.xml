@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="#fff">
+
+    <LinearLayout
+        android:id="@+id/my_work"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="30dp">
+        <View
+            android:layout_width="2dp"
+            android:layout_height="14dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/apply_share_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/my_work"
+            android:textSize="12sp"
+            android:textColor="#282828"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/item_work_info"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_below="@+id/my_work">
+        
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/work_avatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            app:riv_oval="true"
+            android:src="@drawable/mine_head"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/work_avatar"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/work_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#282828"
+                android:text=""/>
+
+            <ImageView
+                android:id="@+id/work_attestation"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/zuoye_gf"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:textSize="11sp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/apply_share_bg"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="置顶"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_work_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_below="@+id/item_work_info"
+        android:textColor="#282828"
+        android:maxLines="3"
+        android:text=""
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/item_work_img"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_below="@+id/item_work_content">
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_work_img">
+        <TextView
+            android:id="@+id/item_work_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textSize="12sp"
+            android:textColor="#A9a9a9"/>
+
+        <TextView
+            android:id="@+id/replay_num"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:textSize="11sp"
+            android:textColor="#282828"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/replay_icon"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/replay_num"
+            android:paddingRight="6dp"
+            android:paddingLeft="24dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/zuoye_pl"/>
+
+        <TextView
+            android:id="@+id/like_num"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@+id/replay_icon"
+            android:textSize="11sp"
+            android:textColor="#282828"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/like_icon"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/like_num"
+            android:paddingRight="6dp"
+            android:paddingLeft="6dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/zuoye_dz"/>
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:visibility="gone"
+            android:paddingRight="18dp"
+            android:src="@drawable/shanchu"
+            android:layout_toLeftOf="@+id/like_icon"/>
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/replay_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:background="#f2f4f7"
+            android:layout_below="@+id/item_work_time">
+        </android.support.v7.widget.RecyclerView>
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#f2f4f7"
+            android:layout_marginTop="21dp"
+            android:layout_below="@+id/replay_list"/>
+    </RelativeLayout>
+</RelativeLayout>

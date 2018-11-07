@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_apply"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f4f7"
+    tools:context="com.wh.wang.scroopclassproject.newproject.ui.activity.SelectApplyActivity">
+
+    <include layout="@layout/titlebarback_new"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebarbackss"
+        android:layout_above="@+id/bottom_menu">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/select_way"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:textColor="#989898"
+                android:textSize="12sp"
+                android:text="选择方式"/>
+            
+            <RelativeLayout
+                android:id="@+id/way_company"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="#fff"
+                android:visibility="gone"
+                android:layout_marginTop="0.5dp"
+                android:layout_below="@+id/select_way">
+
+                <ImageView
+                    android:id="@+id/company_icon"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/bm_qyicon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/company_icon"
+                    android:textSize="14sp"
+                    android:textColor="#282828"
+                    android:text="企业号"/>
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/intonext"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/way_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="#fff"
+                android:layout_marginTop="0.5dp"
+                android:layout_below="@+id/way_company">
+                <ImageView
+                    android:id="@+id/contacts_icon"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/bm_sjicon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/contacts_icon"
+                    android:textSize="14sp"
+                    android:textColor="#282828"
+                    android:text="全部联系人"/>
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/intonext"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/apply_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/way_contacts"
+                android:background="#fff"
+                android:visibility="gone"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/apply_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="#fff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:textColor="#989898"
+                    android:textSize="12sp"
+                    android:text="报名人员"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/apply_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/apply_tv"
+                    android:layout_marginTop="0.5dp">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    
+    <RelativeLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/apply_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text=""
+            android:textSize="12sp"
+            android:textColor="#282828"/>
+
+        <TextView
+            android:id="@+id/apply"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/apply_share_no_bg"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:text="确认报名"/>
+    </RelativeLayout>
+</RelativeLayout>

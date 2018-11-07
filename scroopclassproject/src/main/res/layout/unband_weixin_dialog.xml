@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/login_dialog_shape_corner">
+
+    <com.wh.wang.scroopclassproject.views.CenterTextView
+        android:id="@+id/tv_weixin_bind_dialog_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:text="解绑后该微信账号相关记录会被清空!"
+        android:textColor="#282828"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/view_weixin_bind_dialog_tip"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_weixin_bind_dialog_tip"
+        android:background="#f2f4f7" />
+
+    <LinearLayout
+        android:id="@+id/rlayout_weixin_bind_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/view_weixin_bind_dialog_tip"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/weixin_bind_dialog_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="取消"
+                android:textColor="#282828"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#f2f4f7" />
+
+        <RelativeLayout
+            android:id="@+id/weixin_bind_dialog_sure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="确定解绑"
+                android:textColor="#282828"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

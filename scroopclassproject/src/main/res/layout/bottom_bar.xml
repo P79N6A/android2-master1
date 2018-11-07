@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_main_tab_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:weightSum="3">
+        <RelativeLayout
+            android:id="@+id/id_tab_bottom_jxk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:descendantFocusability="beforeDescendants">
+
+            <TextView
+                android:id="@+id/bar_jxk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="精选课"
+                android:textColor="#8dc63f"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/bar_view_one"
+                android:layout_width="38dp"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bottom_line_shape" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_tab_bottom_xtk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:descendantFocusability="beforeDescendants">
+
+            <TextView
+                android:id="@+id/bar_xtk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="系统课"
+                android:textColor="#28343f"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/bar_view_two"
+                android:layout_width="38dp"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bottom_line_shape"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_tab_bottom_mfk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:descendantFocusability="beforeDescendants">
+
+            <TextView
+                android:id="@+id/bar_mfk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="免费课"
+                android:textColor="#28343f"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/bar_view_three"
+                android:layout_width="38dp"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bottom_line_shape"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/search_course_img"
+        android:layout_width="111dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ivnull"
+        app:riv_corner_radius="@dimen/new_img_corner"/>
+
+    <com.wh.wang.scroopclassproject.newproject.view.SearchTextView
+        android:id="@+id/course_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/video_title_v"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_alignTop="@+id/search_course_img"
+        android:layout_toRightOf="@+id/search_course_img"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+    <com.wh.wang.scroopclassproject.newproject.view.SearchTextView
+        android:id="@+id/course_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/search_course_img"
+        android:layout_alignBottom="@+id/search_course_img"
+        android:textSize="12sp"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/course_learn_num"
+        android:layout_marginRight="35dp"
+        android:textColor="@color/video_title"/>
+
+    <com.wh.wang.scroopclassproject.newproject.view.SearchTextView
+        android:id="@+id/course_learn_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/search_course_img"
+        android:textSize="12sp"
+        android:singleLine="true"
+        android:textColor="@color/video_title"/>
+
+    <View
+        android:id="@+id/cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f2f4f7"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/search_course_img"/>
+</RelativeLayout>

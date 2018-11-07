@@ -1,0 +1,78 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:id="@+id/record_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:text="打卡记录"
+                android:textSize="14sp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/originator"/>
+
+            <TextView
+                android:id="@+id/clicked_num"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_alignTop="@+id/record_tv"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/originator"
+                android:text="今日已打卡：人"/>
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/punch_card_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/punch_card"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/punch_card_list"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/apply_share_bg_3dp"
+            android:gravity="center"
+            android:text="打卡"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/punch_card"
+            android:background="#f2f4f7"/>
+
+        <include
+            layout="@layout/layout_sg_rank"/>
+
+        <include
+            layout="@layout/fragment_action_rule"/>
+    </LinearLayout>
+
+</ScrollView>

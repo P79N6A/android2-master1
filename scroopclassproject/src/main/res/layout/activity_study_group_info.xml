@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/course_bg"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:src="@drawable/ivnull"
+            android:scaleType="centerCrop"/>
+        <FrameLayout
+            android:id="@+id/study_group_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/course_bg"
+            android:layout_alignBottom="@+id/course_bg"
+            android:background="#DE000000">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/study_group_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_below="@+id/study_group_head">
+
+            <!--android:layout_marginTop="-20dp"-->
+            <!--android:background="@drawable/shape_gs_info_bg"-->
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

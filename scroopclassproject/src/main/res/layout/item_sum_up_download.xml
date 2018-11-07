@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/sum_up_download_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="40dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="成为未来的餐饮玩家,你需要几项能力"
+        android:textColor="#282828"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/sum_up_download_bt"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/course_down_clicl" />
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="308dp"
+                android:layout_height="264dp"
+                android:background="@drawable/shape_white_corner"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/jjiechu_image"/>
+
+    <TextView
+        android:id="@+id/flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avatar"
+        android:layout_marginTop="10dp"
+        android:textColor="#282828"
+        android:layout_centerHorizontal="true"
+        android:text="解除管理员"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/flag"
+        android:layout_marginTop="20dp"
+        android:textColor="#556378"
+        android:textSize="12sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text=""/>
+    
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/info"
+        android:layout_below="@+id/info"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/shape_free_bg"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#556378"
+        android:text="取消"/>
+
+    <TextView
+        android:id="@+id/relieve"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/info"
+        android:layout_alignTop="@+id/cancel"
+        android:background="@drawable/register_next_bg"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp"
+        android:text="立即解除"/>
+</RelativeLayout>

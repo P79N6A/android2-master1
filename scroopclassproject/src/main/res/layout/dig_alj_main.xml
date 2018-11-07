@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="266dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="21dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alj_tc_closebutton"
+        android:layout_alignRight="@+id/alj_bg"
+        android:layout_marginRight="8dp"/>
+    <ImageView
+        android:id="@+id/alj_bg"
+        android:layout_width="266dp"
+        android:scaleType="fitXY"
+        android:layout_height="437dp"
+        android:src="@drawable/alj_tc_pic"
+        android:layout_marginTop="50dp"/>
+</RelativeLayout>

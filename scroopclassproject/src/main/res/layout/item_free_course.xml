@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/free_course"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/free_course_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ivnull"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_alignBottom="@+id/free_course_img"
+        android:layout_alignRight="@+id/free_course_img"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="11sp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="78dp"
+        android:layout_below="@+id/free_course_img">
+        <TextView
+            android:id="@+id/free_course_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="14dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:lines="2"
+            android:text="会员积分,如何使用积分绑定顾客,二次到店消费"
+            android:textColor="#282828"
+            android:textSize="14sp" />
+
+
+
+        <TextView
+            android:id="@+id/free_course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_below="@+id/free_course_title"
+            android:text=""
+            android:textColor="#aeb4bc"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/free_course_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text=""
+            android:layout_toRightOf="@+id/free_course_name"
+            android:layout_alignTop="@+id/free_course_name"
+            android:textColor="#aeb4bc"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

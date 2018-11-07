@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/content"
+    tools:context="com.wh.wang.scroopclassproject.newproject.ui.fragment.main_frag.BoutiqueFragment">
+    <include
+        layout="@layout/titlebar_new"/>
+    <RelativeLayout
+        android:id="@+id/boutique_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+        android:layout_below="@+id/titlebar_new">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/choiceness"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="精选课"
+                android:textColor="@color/t_select"/>
+
+
+            <TextView
+                android:id="@+id/system"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="系统课"
+                android:textColor="#28343f"/>
+
+
+            <TextView
+                android:id="@+id/free"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="免费课"
+                android:textColor="#28343f"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/scroll_bar"
+            android:layout_width="120dp"
+            android:layout_height="4dp"
+            android:layout_alignParentBottom="true">
+            <View
+                android:layout_width="38dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bottom_line_shape"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/boutique_vp"
+        android:layout_below="@+id/boutique_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+    
+</RelativeLayout>

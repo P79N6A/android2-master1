@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ClassRoomSdk/ClassRoomSdk.iml" filepath="$PROJECT_DIR$/ClassRoomSdk/ClassRoomSdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android2-master.iml" filepath="$PROJECT_DIR$/android2-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edusdk/edusdk.iml" filepath="$PROJECT_DIR$/edusdk/edusdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jcvideoplayer-lib/jcvideoplayer-lib.iml" filepath="$PROJECT_DIR$/jcvideoplayer-lib/jcvideoplayer-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" filepath="$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scroopclassproject/scroopclassproject.iml" filepath="$PROJECT_DIR$/scroopclassproject/scroopclassproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipe-library/swipe-library.iml" filepath="$PROJECT_DIR$/swipe-library/swipe-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xrichtext/xrichtext.iml" filepath="$PROJECT_DIR$/xrichtext/xrichtext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xutils/xutils.iml" filepath="$PROJECT_DIR$/xutils/xutils.iml" />
+    </modules>
+  </component>
+</project>

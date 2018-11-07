@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="304dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/vip_bg"
+        android:layout_width="304dp"
+        android:scaleType="fitXY"
+        android:layout_height="380dp"
+        android:src="@drawable/tc_cwtyhy_home_pic"/>
+    
+    
+    <ImageView
+        android:id="@+id/vip_bt"
+        android:layout_width="245dp"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/vip_bg"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/tc_ljckbutton"/>
+
+    <ImageView
+        android:id="@+id/vip_close"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/vip_bt"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/tc_closedbutton"/>
+</RelativeLayout>

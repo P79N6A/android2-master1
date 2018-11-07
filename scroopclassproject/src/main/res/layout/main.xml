@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wh.wang.scroopclassproject.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_flayout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F9F9F9"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/main_rb_superior"
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/rb_superior_drawable_selector"
+            android:text="@string/main_superior"/>
+
+        <RadioButton
+            android:id="@+id/main_rb_course"
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/rb_course_drawable_selector"
+            android:text="@string/main_course" />
+
+        <RadioButton
+            android:id="@+id/main_rb_read"
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/rb_read_drawable_selector"
+            android:text="@string/main_read" />
+
+
+        <RadioButton
+            android:id="@+id/main_rb_mine"
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/rb_mine_drawable_selector"
+            android:text="@string/main_mine" />
+    </RadioGroup>
+
+</LinearLayout>

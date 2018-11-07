@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="283dp"
+    android:layout_height="402dp"
+    android:background="@drawable/baomingfeiyongbeijing">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/guanbianniu"/>
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="报名费元"/>
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/price"
+        android:layout_marginTop="38dp"
+        android:textSize="12sp"
+        android:textColor="@color/video_title"
+        android:gravity="center"
+        android:text="您尚未拥有本节课程\n可通过以下任意一种方式加入该学习小组"/>
+
+    <RelativeLayout
+        android:id="@+id/pay_1"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_below="@+id/hint"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="1dp"
+        android:background="@drawable/shape_sg_fff_3_bg">
+
+        <ImageView
+            android:id="@+id/zhijie_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/zhijiebaoming"/>
+        <TextView
+            android:id="@+id/zhijie_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/originator"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/zhijie_icon"
+            android:layout_marginLeft="5dp"
+            android:text="直接报名:费用包含本节课程费+班费"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/way_1"
+        android:layout_width="74dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="-4dp"
+        android:layout_alignTop="@+id/pay_1"
+        android:layout_alignLeft="@+id/pay_1"
+        android:elevation="2dp"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:text="方式一"
+        android:gravity="center"
+        android:background="@drawable/fangshiyier"/>
+
+    <RelativeLayout
+        android:id="@+id/pay_2"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_below="@+id/pay_1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="1dp"
+        android:background="@drawable/shape_sg_fff_3_bg">
+
+        <ImageView
+            android:id="@+id/vip_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/kaitonghuiyuan"/>
+        <TextView
+            android:id="@+id/vip_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/originator"
+            android:layout_centerInParent="true"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/vip_icon"
+            android:layout_alignTop="@+id/vip_icon"
+            android:layout_marginLeft="5dp"
+            android:text="开通会员:成为新知会员，所有线上课程免费，只需缴纳班费"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/way_2"
+        android:layout_width="74dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="-4dp"
+        android:layout_alignTop="@+id/pay_2"
+        android:layout_alignLeft="@+id/pay_2"
+        android:elevation="2dp"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:text="方式二"
+        android:gravity="center"
+        android:background="@drawable/fangshiyier"/>
+
+
+    <TextView
+        android:id="@+id/zhijie_pay"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/pay_2"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#fff"
+        android:text="直接报名\nXXX元"
+        android:background="@drawable/shape_sg_main_oval_bg"/>
+
+    <TextView
+        android:id="@+id/vip_pay"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/pay_2"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#fff"
+        android:text="开通会员\n899元/年"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_sg_417505_oval_bg"/>
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="280dp"
+        android:layout_height="74dp"
+        android:background="@drawable/shape_company_fuction"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:text="@string/szkt_company"/>
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="202dp"
+        android:layout_below="@+id/title"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignRight="@+id/title"
+        android:orientation="vertical"
+        android:background="@drawable/shape_share_bg">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fun_vp"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="114dp">
+        </android.support.v4.view.ViewPager>
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/vp_1"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:button="@null"
+                android:checked="true"
+                android:enabled="false"
+                android:background="@drawable/shaoe_function_selector"
+                android:layout_marginRight="15dp"/>
+
+            <RadioButton
+                android:id="@+id/vp_2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:button="@null"
+                android:enabled="false"
+                android:background="@drawable/shaoe_function_selector"
+                android:layout_marginRight="15dp"/>
+
+            <RadioButton
+                android:id="@+id/vp_3"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:button="@null"
+                android:enabled="false"
+                android:background="@drawable/shaoe_function_selector"
+                android:layout_marginRight="15dp"/>
+
+            <RadioButton
+                android:id="@+id/vp_4"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:enabled="false"
+                android:background="@drawable/shaoe_function_selector"
+                android:button="@null"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/open_company"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:text="免费申请开通"
+            android:textSize="14sp"
+            android:background="@drawable/shape_open_company_bt"/>
+    </LinearLayout>
+</RelativeLayout>

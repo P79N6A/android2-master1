@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ListView
+        android:id="@+id/jxk_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#f2f4f7"
+        android:dividerHeight="10dp"
+        android:footerDividersEnabled="false" />
+
+    <include layout="@layout/layout_reconnection"/>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/type_three"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="#f2f4f7">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="查看全部课程"-->
+            <!--android:textColor="#a2b1c7"-->
+            <!--android:textSize="14sp" />-->
+
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

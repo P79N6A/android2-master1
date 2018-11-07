@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/video_img"
+        android:layout_width="168dp"
+        android:layout_height="99dp"
+        app:riv_corner_radius="@dimen/new_img_corner"
+        android:src="@drawable/ivnull"/>
+
+    <TextView
+        android:id="@+id/video_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/video_title_v"
+        android:layout_alignLeft="@+id/video_img"
+        android:layout_alignRight="@+id/video_img"
+        android:layout_below="@+id/video_img"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textStyle="bold"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/learn_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_img"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/video_title"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:id="@+id/video_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_img"
+        android:layout_alignRight="@+id/video_img"
+        android:layout_alignTop="@+id/learn_num"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/video_title"
+        android:gravity="right"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/learn_num"
+        android:singleLine="true"
+        android:textSize="11sp"/>
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_transfer_accounts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F4F6"
+    tools:context="com.wh.wang.scroopclassproject.newproject.ui.activity.TransferAccountsActivity">
+
+    <include layout="@layout/titlebarback_new"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_below="@+id/titlebarbackss"
+        android:background="#4894f2">
+        <TextView
+            android:id="@+id/bank_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:text="开户银行"
+            android:textColor="#b9daf9"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/bank_tv"
+            android:text="招商银行股份有限公司北京海淀黄庄支行"
+            android:layout_marginRight="15dp"
+            android:textColor="#fff"
+            android:textSize="19sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/titlebarbackss"
+        android:layout_marginTop="100dp"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#AEB4BC"
+            android:layout_marginLeft="40dp"
+            android:text="对公转账账号"
+            android:layout_marginTop="28dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transfer"
+            android:layout_marginTop="12sp"
+            android:layout_alignLeft="@+id/transfer"
+            android:text="@string/train_id"
+            android:textColor="#282828"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    
+    <TextView
+        android:id="@+id/pay_finish"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@drawable/register_next_bg"
+        android:layout_below="@+id/info"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="13sp"
+        android:text="支付完成"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pay_finish"
+        android:layout_marginTop="13dp"
+        android:textSize="13sp"
+        android:textColor="#aeb4bc"
+        android:text="支付遇到问题?"/>
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context="com.wh.wang.scroopclassproject.newproject.ui.fragment.search_result.SearchAllFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f4f7">
+        <RelativeLayout
+            android:id="@+id/course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:background="#fff"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/course_num"
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:gravity="center"
+                android:textColor="@color/video_title_v"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="课程"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#f2f4f7"
+                android:layout_below="@+id/course_num"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/course_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:layout_marginTop="0.5dp"
+                android:layout_below="@+id/course_num">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/course_look_all"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/course_list"
+                android:text="@string/look_all_course"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/video_title"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/offline_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="gone"
+            android:layout_below="@+id/course"
+            android:layout_marginBottom="10dp"
+            android:background="#fff">
+            
+            <RelativeLayout
+                android:id="@+id/offline_title"
+                android:layout_width="match_parent"
+                android:layout_height="62dp">
+
+                <TextView
+                    android:id="@+id/offline_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/video_title_v"
+                    android:textSize="16sp"
+                    android:text="线下课"/>
+
+                <TextView
+                    android:id="@+id/check_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"
+                    android:layout_marginRight="4dp"
+                    android:layout_toLeftOf="@+id/arrow"
+                    android:textColor="@color/video_title"
+                    android:text="@string/check_more_event"/>
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/intonext" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#f2f4f7"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/offline_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:layout_below="@+id/offline_title">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/essay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/offline_event"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:visibility="gone"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/essay_num"
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:gravity="center"
+                android:textColor="@color/video_title_v"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="文章"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#f2f4f7"
+                android:layout_below="@+id/essay_num"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/essay_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:layout_marginTop="10.5dp"
+                android:layout_below="@+id/essay_num">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/essay_look_all"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/essay_list"
+                android:text="@string/look_all_essay"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="-10dp"
+                android:textColor="@color/video_title"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

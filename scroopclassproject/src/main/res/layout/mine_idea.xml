@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.wh.wang.scroopclassproject.activity.MineIdeaActivity">
+
+    <include layout="@layout/titlebarback_new" />
+
+    <ImageView
+        android:id="@+id/set_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/mine_idea_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/set_idea_shape_corner"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/feedback_content_edit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="意见不嫌多,如有问题,请尽可能详细描述"
+            android:paddingBottom="14dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="12dp"
+            android:singleLine="false"
+            android:textColor="#ff333333"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_nums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_sums_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#9e9e9e"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_sums_xian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tv_sums_now"
+            android:text="/"
+            android:textColor="#9e9e9e"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_sums_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_sums_xian"
+            android:text="500"
+            android:textColor="#9e9e9e"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mine_idea_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="8dp"
+        android:text="如有更多疑问,您可以通过以下方式联系我们"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mine_idea_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="8dp"
+        android:text="客户电话 :  4009003650"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mine_idea_weixin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="8dp"
+        android:text="微        信 :  shaoziqd01勺布斯"
+        android:textSize="12sp" />
+</LinearLayout>

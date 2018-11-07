@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.wh.wang.scroopclassproject.activity.DownLoadingActivity">
+
+    <include layout="@layout/titlebarback" />
+
+    <RelativeLayout
+        android:id="@+id/downed_manager_rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebarbacks"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <ListView
+            android:id="@+id/downed_detial_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:footerDividersEnabled="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/downed_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/downed_bottom_top"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#f2f4f8">
+
+            <TextView
+                android:id="@+id/downed_bottom_top_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="可用空间7.5G"
+                android:textColor="#aeb4bc"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/downed_bottom_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/downed_bottom_top"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/downed_bottom_bottom_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/downed_bottom_bottom_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:id="@+id/downed_bottom_bottom_all_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="全选"
+                        android:textColor="#282828"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/downed_bottom_bottom_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:id="@+id/downed_bottom_bottom_delete_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="删除"
+                        android:textColor="#282828"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

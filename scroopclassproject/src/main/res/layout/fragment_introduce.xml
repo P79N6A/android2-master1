@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f4f7"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="#fff"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp">
+
+        <View
+            android:id="@+id/course_line"
+            android:layout_width="4dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:background="@color/main_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/course_line"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/video_title_v"
+            android:textStyle="bold"
+            android:text="课程详情"/>
+        
+        <ImageView
+            android:id="@+id/yuan_arrow"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/yuanjiantou"/>
+
+        <TextView
+            android:id="@+id/rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/video_title"
+            android:textSize="12sp"
+            android:layout_toLeftOf="@+id/yuan_arrow"
+            android:layout_centerVertical="true"
+            android:text="活动规则"
+            android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:background="#fff"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="16dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/teacher_head"
+            android:src="@drawable/kecheng" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/teacher_head"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/icon"
+            android:gravity="center_vertical"
+            android:text="课程讲师"
+            android:textColor="@color/video_title_v"
+            android:textSize="16sp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/teacher_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ivnull"
+            app:riv_oval="true" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/teacher_head"
+            android:layout_alignTop="@+id/teacher_head"
+            android:layout_toRightOf="@+id/teacher_head"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teacher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/video_title_v"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/teacher_duan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxLines="2"
+                android:textColor="@color/video_title_v"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/introduce_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+    <!--<com.wh.wang.scroopclassproject.newproject_dh.view.WrapContentHeightScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:fillViewport="true">-->
+
+        <!---->
+    <!--</com.wh.wang.scroopclassproject.newproject_dh.view.WrapContentHeightScrollView>-->
+
+
+</LinearLayout>

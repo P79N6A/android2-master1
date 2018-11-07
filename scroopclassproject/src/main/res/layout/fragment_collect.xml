@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                tools:context="com.wh.wang.scroopclassproject.newproject.ui.fragment.mystudy_frag.CollectFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/collect_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/no_data"
+        android:layout_width="200dp"
+        android:layout_height="138dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/kong"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/no_login"
+        android:layout_width="200dp"
+        android:layout_height="138dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/weidenglu"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wh.wang.scroopclassproject.newproject.ui.activity.NewEssayMoreActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/label_list"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#fff">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f2f4f7"
+        android:layout_alignBottom="@+id/label_list"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/essay_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/label_list"
+        android:background="#fff">
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

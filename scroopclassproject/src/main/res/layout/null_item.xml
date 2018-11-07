@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/mines_no_datas_rl"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/mines_no_datas_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/mines_no_datas_tv_mian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mines_no_datas_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="标题栏主要值"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/mines_no_datas_tv_branch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mines_no_datas_tv_mian"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="标题栏主要值"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/mines_no_datas_ib_class"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/mines_no_datas_tv_branch"
+            android:layout_centerHorizontal="true"
+            android:text="热门课程"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>

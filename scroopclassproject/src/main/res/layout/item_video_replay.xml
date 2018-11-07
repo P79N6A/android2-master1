@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f4f7">
+
+    <TextView
+        android:id="@+id/replay_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#49546b"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/replay_content"
+        android:layout_below="@+id/replay_content"
+        android:layout_marginTop="4dp"
+        android:text=""
+        android:textColor="#B6BAC2"
+        android:textSize="13sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/replay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/time"
+        android:layout_marginLeft="6dp"
+        android:text="回复"
+        android:layout_marginTop="2dp"
+        android:textColor="#999999"
+        android:textSize="12sp"/>
+
+    <ImageView
+        android:id="@+id/replay_icon"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/replay"
+        android:layout_marginTop="1dp"
+        android:layout_toLeftOf="@+id/replay"
+        android:src="@drawable/huifu"/>
+
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/replay"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/replay_icon"
+        android:text="删除"
+        android:visibility="gone"
+        android:textColor="#999999"
+        android:textSize="12sp"/>
+
+
+    <ImageView
+        android:id="@+id/delete_icon"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:visibility="gone"
+
+        android:layout_alignTop="@+id/delete"
+        android:layout_toLeftOf="@+id/delete"
+        android:src="@drawable/shanchu"/>
+</RelativeLayout>

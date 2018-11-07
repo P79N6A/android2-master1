@@ -1,0 +1,51 @@
+package com.wh.wang.scroopclassproject.newproject.ui.fragment.scan_resule_frag;
+
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.wh.wang.scroopclassproject.R;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class SuccessFragment extends Fragment {
+
+    private TextView mName;
+    private TextView mTel;
+    private TextView mTitle;
+
+    public SuccessFragment() {
+        // Required empty public constructor
+    }
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_success, container, false);
+
+        mName = (TextView) view.findViewById(R.id.name);
+        mTel = (TextView) view.findViewById(R.id.tel);
+        mTitle = (TextView) view.findViewById(R.id.title);
+        initData();
+        return view;
+    }
+
+    private void initData() {
+        if (getArguments()!=null) {
+            String name = getArguments().getString("name");
+            String tel = getArguments().getString("tel");
+            String title = getArguments().getString("title");
+            mName.setText("姓名："+name);
+            mTel.setText("手机号："+tel);
+            mTitle.setText("课程："+title);
+        }
+    }
+
+}

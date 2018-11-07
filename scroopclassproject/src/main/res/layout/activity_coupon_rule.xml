@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp">
+
+    <View
+        android:id="@+id/rule_1_line"
+        android:layout_width="4dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shuxian"/>
+
+    <TextView
+        android:id="@+id/rule_title_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rule_1_line"
+        android:layout_alignBottom="@+id/rule_1_line"
+        android:layout_toRightOf="@+id/rule_1_line"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/video_title_v"
+        android:textSize="16sp"
+        android:text="优惠券是什么？"/>
+
+    <TextView
+        android:id="@+id/rule_content_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rule_title_1"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/rule_title_1"
+        android:textSize="12sp"
+        android:lineSpacingMultiplier="1.3"
+        android:textColor="@color/video_title"
+        android:layout_marginBottom="10dp"
+        android:text="勺子课堂优惠券是指勺子课堂对外发布和认可的抵用券，在勺子课堂平台使用，满足使用条件方可抵扣相应金额或勺币"/>
+    
+    <View
+        android:id="@+id/cut_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f4f7"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/rule_content_1"/>
+
+    <View
+        android:id="@+id/rule_2_line"
+        android:layout_width="4dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/cut_line_1"
+        android:background="@drawable/shuxian"/>
+
+    <TextView
+        android:id="@+id/rule_title_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rule_2_line"
+        android:layout_alignBottom="@+id/rule_2_line"
+        android:layout_toRightOf="@+id/rule_2_line"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/video_title_v"
+        android:textSize="16sp"
+        android:text="优惠券的使用规则是什么？"/>
+
+    <TextView
+        android:id="@+id/rule_content_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rule_title_2"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/rule_title_2"
+        android:textSize="12sp"
+        android:lineSpacingMultiplier="1.3"
+        android:textColor="@color/video_title"
+        android:layout_marginBottom="10dp"
+        android:text="1.不同类型优惠券所适用的产品不同\n2.优惠券不可叠加使用，每个订单仅可以使用一张\n3.优惠券不找零、不可提现、不可转让\n4.优惠券请在有效期内使用，过期则作废\n5.优惠券若有更新变动，以勺子课堂最新说明为准"/>
+
+    <View
+        android:id="@+id/cut_line_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f4f7"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/rule_content_2"/>
+
+    <View
+        android:id="@+id/rule_3_line"
+        android:layout_width="4dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/cut_line_2"
+        android:background="@drawable/shuxian"/>
+
+    <TextView
+        android:id="@+id/rule_title_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rule_3_line"
+        android:layout_alignBottom="@+id/rule_3_line"
+        android:layout_toRightOf="@+id/rule_3_line"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/video_title_v"
+        android:textSize="16sp"
+        android:text="为什么优惠券有些情况下不可用？"/>
+
+    <TextView
+        android:id="@+id/rule_content_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rule_title_3"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/rule_title_3"
+        android:textSize="12sp"
+        android:lineSpacingMultiplier="1.3"
+        android:textColor="@color/video_title"
+        android:layout_marginBottom="10dp"
+        android:text="1. 当前订单金额可能不满足优惠券的使用要求\n2. 不同类型优惠券所适用的产品不同"/>
+
+    <View
+        android:id="@+id/cut_line_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f4f7"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/rule_content_3"/>
+
+    <View
+        android:id="@+id/rule_4_line"
+        android:layout_width="4dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/cut_line_3"
+        android:background="@drawable/shuxian"/>
+
+    <TextView
+        android:id="@+id/rule_title_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rule_4_line"
+        android:layout_alignBottom="@+id/rule_4_line"
+        android:layout_toRightOf="@+id/rule_4_line"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/video_title_v"
+        android:textSize="16sp"
+        android:text="如何获得优惠券？"/>
+
+    <TextView
+        android:id="@+id/rule_content_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rule_title_4"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/rule_title_4"
+        android:textSize="12sp"
+        android:lineSpacingMultiplier="1.3"
+        android:textColor="@color/video_title"
+        android:layout_marginBottom="10dp"
+        android:text="1. 参与勺子课堂各种活动，有机会领取丰厚优惠券\n2. 完成勺子课堂日常任务，有机会领取优惠券\n3. 更多获得方式请关注勺子课堂动态"/>
+
+
+    <TextView
+        android:id="@+id/help_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/phone"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/video_title"
+        android:textSize="12sp"
+        android:text="出现问题寻求帮助？"/>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/video_title"
+        android:text="客服电话:400-900-3650"/>
+</RelativeLayout>

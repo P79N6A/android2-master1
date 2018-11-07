@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="#f2f4f7">
+    <TextView
+        android:id="@+id/status_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#fff"
+        android:textSize="14sp"
+        android:textColor="@color/video_title_v"
+        android:gravity="center"
+        android:text="学习小组"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/status_title">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <FrameLayout
+                android:id="@+id/sg_home_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp">
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/sg_hot_apply_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sg_home_info"
+                android:textSize="16sp"
+                android:paddingLeft="8dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/video_title_v"
+                android:text="火热报名中"
+                android:textStyle="bold"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/sg_hot_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sg_hot_apply_tv"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <ImageView
+                android:id="@+id/sg_rule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sg_hot_list"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginBottom="40dp"
+                android:src="@drawable/sg_rule"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

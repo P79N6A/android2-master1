@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="308dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_white_corner"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/yaoqing_image"/>
+
+    <TextView
+        android:id="@+id/flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avatar"
+        android:layout_marginTop="10dp"
+        android:textColor="#282828"
+        android:layout_centerHorizontal="true"
+        android:text="邀请同事"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/flag"
+        android:layout_marginTop="20dp"
+        android:textColor="#556378"
+        android:textSize="12sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="您一共可以邀请10位同事加入\n剩余可邀请同时人数: 3人"/>
+
+    <TextView
+        android:id="@+id/relieve"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/register_next_bg"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/info"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="32dp"
+        android:text="邀请好友"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_below="@+id/relieve"
+        android:layout_centerHorizontal="true"
+        android:textSize="10sp"
+        android:text="提醒： 为保证准确性,请勿将分享链接\n发送至微信群"
+        android:gravity="center"
+        android:textColor="#AEB4BC"/>
+</RelativeLayout>

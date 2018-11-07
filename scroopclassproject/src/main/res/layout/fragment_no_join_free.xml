@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/title_line"
+            android:layout_width="4dp"
+            android:layout_height="18dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/main_color" />
+
+        <TextView
+            android:id="@+id/sg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/title_line"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text=""
+            android:layout_toLeftOf="@+id/share"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/video_title_v"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="76dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/apply_share_bg_3dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:text="邀请好友"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/sg_title"
+            android:background="#f2f4f7" />
+
+        <LinearLayout
+            android:id="@+id/join_head"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@+id/sg_title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0.5dp"
+            android:layout_toLeftOf="@+id/num_icon"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/num_icon"
+            android:layout_width="16dp"
+            android:layout_height="72dp"
+            android:layout_alignTop="@+id/join_head"
+            android:layout_toLeftOf="@+id/join_num"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/renshu"/>
+        <TextView
+            android:id="@+id/join_num"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/join_head"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="0/0人"
+            android:textColor="@color/originator"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/join_group"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/join_head"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/apply_share_bg_3dp"
+            android:gravity="center"
+            android:text="@string/join_group"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/head"
+        android:background="#f2f4f7"/>
+    <FrameLayout
+        android:id="@+id/introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="10dp">
+
+    </FrameLayout>
+
+</RelativeLayout>

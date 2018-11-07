@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wh.wang.scroopclassproject.newproject.view.SwipeItemLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <RelativeLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_itemType="main">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/qiye_zwpic"
+            android:scaleType="centerCrop"
+            app:riv_oval="true"/>
+
+        <RelativeLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/avatar">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="DEMO"
+                android:textColor="#282828"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:gravity="center"
+                android:text="2018-02-17"
+                android:textColor="#aeb4bc"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/info"
+            android:layout_marginRight="15dp"
+            android:background="#F2F4F7"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_itemType="menu">
+
+        <Button
+            android:id="@+id/read"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:background="#C7C7Cb"
+            android:gravity="center"
+            android:text="标为已读"
+            android:textColor="#fff"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/del"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:background="#eb4e3d"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/read"
+            android:text="删除"
+            android:textColor="#fff"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+</com.wh.wang.scroopclassproject.newproject.view.SwipeItemLayout>

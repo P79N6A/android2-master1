@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/no_data"
+    android:layout_height="190dp"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/no_data_img"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/wuneirongzhanweitu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_data_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:text="@string/history_no_data"
+            android:textColor="#A5A9B1"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_video_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/video_buy_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/video_buy_course"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_buy_bg" />
+
+        <TextView
+            android:id="@+id/video_buy_vip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="开通会员"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/imm_vip_shape"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/video_detail"
+        android:layout_width="match_parent"
+        android:elevation="2dp"
+        android:background="#000"
+        android:layout_height="200dp">
+        <com.wh.wang.scroopclassproject.newproject.view.SZSurfaceView
+            android:id="@+id/sz_surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+        </com.wh.wang.scroopclassproject.newproject.view.SZSurfaceView>
+        <RelativeLayout
+            android:id="@+id/count_down"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#000"
+            android:visibility="invisible">
+            <ImageView
+                android:id="@+id/count_down_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="14dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/jc_click_back_selector" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/residue_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:layout_centerHorizontal="true"
+                    android:text="距课程开始仅剩"/>
+
+                <LinearLayout
+                    android:id="@+id/residue_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/residue_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dp">
+
+                    <TextView
+                        android:id="@+id/residue_time_day"
+                        android:layout_width="32dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="#fff"
+                        android:text="06"
+                        android:background="@drawable/shape_cut_down_bg"/>
+                    <TextView
+                        android:id="@+id/residue_time_day_tv"
+                        android:layout_width="21dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="#fff"
+                        android:text="天"/>
+                    <TextView
+                        android:id="@+id/residue_time_hour"
+                        android:layout_width="32dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="#fff"
+                        android:text="06"
+                        android:background="@drawable/shape_cut_down_bg"/>
+                    <TextView
+                        android:id="@+id/residue_time_hour_tv"
+                        android:layout_width="21dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="#fff"
+                        android:text="时"/>
+                    <TextView
+                        android:id="@+id/residue_time_minute"
+                        android:layout_width="32dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="#fff"
+                        android:text="22"
+                        android:background="@drawable/shape_cut_down_bg"/>
+                    <TextView
+                        android:id="@+id/residue_time_minute_tv"
+                        android:layout_width="21dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="#fff"
+                        android:text="分"/>
+                    <TextView
+                        android:id="@+id/residue_time_second"
+                        android:layout_width="32dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="#fff"
+                        android:text="53"
+                        android:background="@drawable/shape_cut_down_bg"/>
+                    <TextView
+                        android:id="@+id/residue_time_second_tv"
+                        android:layout_width="21dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="#fff"
+                        android:text="秒"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/public_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/residue_time"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="#737580"
+                    android:layout_marginTop="16dp"
+                    android:text="2018年5月27日  23:54:28开课"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/video_detail">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/vedio_cap_press"
+                android:textSize="14sp"
+                android:text="详情"/>
+
+            <TextView
+                android:id="@+id/catalogue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/vedio_cap"
+                android:textSize="14sp"
+                android:text="目录"/>
+
+            <TextView
+                android:id="@+id/comment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/vedio_cap"
+                android:textSize="14sp"
+                android:text="心得"/>
+        </LinearLayout>
+        
+        <FrameLayout
+            android:id="@+id/line"
+            android:layout_width="100dp"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true">
+            <View
+                android:layout_width="70dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/video_bottom_line_shape"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/video_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/video_title"
+        android:layout_above="@+id/video_buy_menu"
+        android:background="#f2f4f7">
+
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/learn_card"
+        android:layout_width="129dp"
+        android:layout_height="39dp"
+        android:src="@drawable/xxkp_tyhytq_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="148dp"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"/>
+    <RelativeLayout
+        android:id="@+id/cache"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/video_detail"
+        android:background="#fff"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/cache_video_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:text="请选择缓存内容"
+            android:gravity="center_vertical"
+            android:textColor="#162734"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/cache_video_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:src="@drawable/down_close" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cache_video_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cache_video_title"
+            android:layout_above="@+id/cache_video_free_space">
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/cache_video_free_space"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text=""
+            android:textColor="#88898a"
+            android:gravity="center"
+            android:layout_above="@+id/cache_video_all"
+            android:background="#f2f4f7"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/cache_video_all"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:text="缓存全部"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:textColor="#282828"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/check_cache_video"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/check_cache_video_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="8dp"
+                android:text="查看已缓存内容"
+                android:textColor="#282828"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_have_download_nums"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/check_cache_video_title"
+                android:background="@drawable/down_shape_corner"
+                android:text="0"
+                android:gravity="center"
+                android:layout_marginRight="8dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_have_download_nums"
+                android:layout_width="9dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_have_download_nums"
+                android:background="@drawable/downback" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/mc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="3dp"
+        android:visibility="gone"
+        android:background="#A1000000"/>
+</RelativeLayout>

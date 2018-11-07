@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/course_head_img"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignBottom="@+id/course_head_img"
+        android:layout_alignRight="@+id/course_head_img"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        android:paddingRight="4dp"
+        android:paddingLeft="4dp"/>
+    <TextView
+        android:id="@+id/course_head_title"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:text="运营力"
+        android:layout_below="@+id/course_head_img"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#282828"
+        android:gravity="bottom"
+        android:textSize="16sp" />
+</RelativeLayout>

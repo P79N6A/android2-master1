@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menu">
+<Button
+    android:id="@+id/bt_clear"
+    android:layout_marginTop="30dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:text="清除会员和报名数据"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/gift_bag"
+        android:layout_width="93dp"
+        android:layout_height="102dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/menu"
+        android:layout_marginRight="4dp"
+        android:visibility="gone"
+        android:src="@drawable/xinrenlibaoxiaotanchuang"/>
+    <RadioGroup
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F9F9F9"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_boutique"
+            style="@style/botttom_tag_style"
+            android:checked="true"
+            android:drawableTop="@drawable/rb_superior_drawable_selector"
+            android:text="@string/main_superior" />
+
+        <RadioButton
+            android:id="@+id/main_course"
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/rb_course_drawable_selector"
+            android:text="@string/main_course" />
+
+        <RadioButton
+            android:id="@+id/main_study_group"
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/rb_sg_drawable_selector"
+            android:text="@string/main_study_group" />
+
+        <RadioButton
+            android:id="@+id/main_my_study"
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/rb_read_drawable_selector"
+            android:text="@string/main_read" />
+
+
+        <RadioButton
+            android:id="@+id/main_my_info"
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/rb_mine_drawable_selector"
+            android:text="@string/main_mine" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/service_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_above="@+id/menu"
+        android:visibility="gone"
+        android:background="@drawable/shape_home_service_bg">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/guanbitanchuang"
+            android:layout_centerVertical="true"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/close"
+            app:riv_oval="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ivnull"/>
+
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/avatar"
+            android:layout_toLeftOf="@+id/check"
+            android:maxEms="2"
+            android:ellipsize="end"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:text="为提供更好的服务\n您的专属顾问已更换为Alice"/>
+
+        <TextView
+            android:id="@+id/check"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_sg_fff_3_bg"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/video_title_v"
+            android:text="查看"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:background="#f2f4f7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:id="@+id/xt_type_one_rlayout_flag_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/xt_type_one_flag_iv_one"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/yingyunli" />
+
+            <TextView
+                android:id="@+id/xt_type_one_flag_tv_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xt_type_one_flag_iv_one"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:text="营运力"
+                android:textColor="#56606e"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/xt_type_one_rlayout_flag_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/xt_type_one_flag_iv_two"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/rencaili" />
+
+            <TextView
+                android:id="@+id/xt_type_one_flag_tv_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xt_type_one_flag_iv_two"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:text="人才力"
+                android:textColor="#56606e"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/xt_type_one_rlayout_flag_three"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/xt_type_one_flag_iv_three"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/zhichili_new" />
+
+            <TextView
+                android:id="@+id/xt_type_one_flag_tv_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xt_type_one_flag_iv_three"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:text="支持力"
+                android:textColor="#56606e"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/xt_type_one_rlayout_flag_four"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/xt_type_one_flag_iv_four"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/zhanlueli" />
+
+            <TextView
+                android:id="@+id/xt_type_one_flag_tv_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xt_type_one_flag_iv_four"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:text="战略力"
+                android:textColor="#56606e"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/xt_type_one_rlayout_flag_five"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/xt_type_one_flag_iv_five"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/yingxiaoli" />
+
+            <TextView
+                android:id="@+id/xt_type_one_flag_tv_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xt_type_one_flag_iv_five"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:text="营销力"
+                android:textColor="#56606e"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/qiye_zwpic"
+        android:scaleType="centerCrop"
+        app:riv_oval="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_toLeftOf="@+id/remind"
+        android:layout_toRightOf="@+id/avatar">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="DEMO"
+            android:textColor="#282828"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:gravity="center"
+            android:text="已观看24分钟"
+            android:textColor="#aeb4bc"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/time"
+            android:layout_marginLeft="21dp"
+            android:text="完成24%"
+            android:textColor="#aeb4bc"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/remind"
+        android:layout_width="70dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="@color/many_pay"
+        android:text="提醒"
+        android:background="@drawable/shape_many_pay_bg"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#F2F4F7"/>
+</RelativeLayout>

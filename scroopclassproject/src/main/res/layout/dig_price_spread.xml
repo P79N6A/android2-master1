@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="230dp"
+              android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="230dp"
+        android:layout_height="190dp">
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="190dp"
+            android:src="@drawable/vip_chahua"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:textSize="14sp"
+            android:textColor="#F9D584"
+            android:text="成为会员立省"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:textSize="27sp"
+            android:textColor="#F9D584"
+            android:text="500元"
+            android:layout_marginLeft="80dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="213dp"
+        android:layout_height="70dp"
+        android:background="@drawable/shape_share_bg"
+        android:layout_marginLeft="3.5dp"
+        android:layout_below="@+id/head">
+
+        <ImageView
+            android:id="@+id/vip_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/vip_button"/>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="256dp"
+    android:layout_height="518dp">
+    <ImageView
+        android:id="@+id/finish_img"
+        android:layout_width="256dp"
+        android:layout_height="452dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="255dp"
+        android:layout_height="66dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@drawable/shape_bottom_radius_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/finish_img">
+        <LinearLayout
+            android:id="@+id/share_wechat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/share_iv_py"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/share_wechat" />
+
+            <TextView
+                android:id="@+id/share_tv_py"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:textSize="10sp"
+                android:text="@string/wechat_tv"
+                android:textColor="#71788a" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/share_pyq"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/share_iv_pyq"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/share_pq" />
+
+            <TextView
+                android:id="@+id/share_tv_pyq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/share_iv_pyq"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:textSize="10sp"
+                android:text="@string/share_pyq"
+                android:textColor="#71788a" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/save_local"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/share_iv_local"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/share_bd" />
+
+            <TextView
+                android:id="@+id/share_tv_local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/share_iv_pyq"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:textSize="10sp"
+                android:text="@string/save_local"
+                android:textColor="#71788a" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

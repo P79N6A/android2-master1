@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/event_time"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textSize="16sp"
+        android:textColor="@color/video_title_v"
+        android:gravity="center_vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_time"
+        android:paddingRight="14dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/shape_white_corner">
+        
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/event_img"
+            android:layout_width="111dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:riv_corner_radius="3dp"
+            android:src="@drawable/ivnull"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_alignTop="@+id/event_img"
+            android:layout_toRightOf="@+id/event_img"
+            android:textColor="@color/video_title_v"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_toRightOf="@+id/event_img"
+            android:layout_alignBottom="@+id/event_img"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/address_icon"/>
+        <TextView
+            android:id="@+id/event_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/event_img"
+            android:layout_toRightOf="@+id/icon"
+            android:textSize="14sp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/video_title"
+            android:singleLine="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/titlebarback_new"/>
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/browse_title_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_below="@+id/titlebarbackss">
+
+        <include
+            android:id="@id/swipe_refresh_header"
+            layout="@layout/layout_header"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+        </android.support.v7.widget.RecyclerView>
+        <include
+            android:id="@id/swipe_load_more_footer"
+            layout="@layout/layout_foot"/>
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+</RelativeLayout>

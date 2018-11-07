@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/superiror_five_rlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/superiror_five_rlayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/superiror_five_tv_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="/  免费课程  /"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/superiror_five_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/superiror_five_iv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/rightarro" />
+
+            <TextView
+                android:id="@+id/superiror_five_tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/superiror_five_iv_more"
+                android:text="更多"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/superiror_five_rlayout_one"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/superiror_five_rlayout_title">
+
+        <ImageView
+            android:id="@+id/superiror_five_iv_one"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ivnull" />
+
+        <TextView
+            android:id="@+id/superiror_five_tv_title_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/superiror_five_iv_one"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="你还记得积分"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/superiror_five_tv_money_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/superiror_five_tv_title_one"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/superiror_five_iv_one"
+            android:text="¥ 99.0"
+            android:textColor="@color/main_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/superiror_five_rlayout_two"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/superiror_five_rlayout_one">
+
+        <ImageView
+            android:id="@+id/superiror_five_iv_two"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ivnull" />
+
+        <TextView
+            android:id="@+id/superiror_five_tv_title_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/superiror_five_iv_two"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="你还记得积分"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/superiror_five_tv_money_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/superiror_five_tv_title_two"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/superiror_five_iv_two"
+            android:text="¥ 99.0"
+            android:textColor="@color/main_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/superiror_five_rlayout_three"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/superiror_five_rlayout_two">
+
+        <ImageView
+            android:id="@+id/superiror_five_iv_three"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ivnull" />
+
+        <TextView
+            android:id="@+id/superiror_five_tv_title_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/superiror_five_iv_three"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="你还记得积分"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/superiror_five_tv_money_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/superiror_five_tv_title_three"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/superiror_five_iv_three"
+            android:text="¥ 99.0"
+            android:textColor="@color/main_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/superiror_five_rlayout_four"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/superiror_five_rlayout_three">
+
+        <ImageView
+            android:id="@+id/superiror_five_iv_four"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ivnull" />
+
+        <TextView
+            android:id="@+id/superiror_five_tv_title_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/superiror_five_iv_four"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="你还记得积分"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/superiror_five_tv_money_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/superiror_five_tv_title_four"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/superiror_five_iv_four"
+            android:text="¥ 99.0"
+            android:textColor="@color/main_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

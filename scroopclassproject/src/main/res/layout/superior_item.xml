@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/superior_item_one"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <RelativeLayout
+            android:id="@+id/rlayout_superiror_event_center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/superior_header_rlayout_superiror_center">
+
+            <TextView
+                android:id="@+id/superiror_event_center_tv_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="/  火热报名  /"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/superiror_event_center_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/superiror_event_center_iv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/rightarro" />
+
+                <TextView
+                    android:id="@+id/superiror_event_center_tv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/superiror_event_center_iv_more"
+                    android:text="更多"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/superior_event_one_rl"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/rlayout_superiror_event_center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/superior_event_one_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="#60000000">
+
+                <TextView
+                    android:id="@+id/superior_event_one_tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="海淀。。。。"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/superior_event_one_tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="9.4"
+                    android:textColor="@android:color/white" />
+
+
+                <TextView
+                    android:id="@+id/superior_event_one_tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="¥99"
+                    android:textColor="@color/main_color" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/superior_event_two_rl"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/superior_event_one_rl"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/superior_event_two_rl_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/superior_event_two_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#60000000">
+
+                    <TextView
+                        android:id="@+id/superior_event_two_tv_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="海淀。。。。"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/superior_event_two_tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="海淀。。。。"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/superior_event_two_tv_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="海淀。。。。"
+                        android:textColor="@color/main_color" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/superior_event_two_rl_two"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/superior_event_two_rl_two_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/superior_item_rlayout_one_marginleft"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/superior_event_two_iv_two_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/list" />
+
+                    <TextView
+                        android:id="@+id/superior_event_two_tv_title_two_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/superior_event_two_iv_two_one"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="员工幸福是一切餐厅经营的原点"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/superior_event_two_tv_talk_two_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="8dp"
+                        android:text="主讲"
+                        android:textColor="@color/main_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/superior_event_two_tv_learn_two_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/superior_item_rlayout_marginbottom"
+                        android:text="234已学"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/superior_event_two_rl_two_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/superior_item_rlayout_one_marginleft"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/superior_event_two_iv_two_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ivnull" />
+
+                    <TextView
+                        android:id="@+id/superior_event_two_tv_title_two_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/superior_event_two_iv_two_two"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="员工幸福是一切餐厅经营的原点"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/superior_event_two_tv_talk_two_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="8dp"
+                        android:text="主讲"
+                        android:textColor="@color/main_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/superior_event_two_tv_learn_two_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/superior_item_rlayout_marginbottom"
+                        android:text="234已学"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/superior_item_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlayout_superiror_center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/superiror_center_tv_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="/  好评推荐  /"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/superiror_center_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/superiror_center_iv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/rightarro" />
+
+                <TextView
+                    android:id="@+id/superiror_center_tv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/superiror_center_iv_more"
+                    android:text="更多"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llayout_one"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:layout_below="@+id/rlayout_superiror_center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/rlayout_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/superior_item_rlayout_one_marginleft"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/superiror_item_iv_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ivnull" />
+
+                <TextView
+                    android:id="@+id/superiror_item_title_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/superiror_item_iv_one"
+                    android:layout_marginTop="-10dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="员工幸福是一切餐厅经营的原点"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/superiror_item_maintalk_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:text="主讲"
+                    android:textColor="@color/main_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/superiror_item_study_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/superior_item_rlayout_marginbottom"
+                    android:text="234已学"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlayout_two"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/superior_item_rlayout_two_marginright"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/superiror_item_iv_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ivnull" />
+
+                <TextView
+                    android:id="@+id/superiror_item_title_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/superiror_item_iv_two"
+                    android:layout_marginTop="-10dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="员工幸福是一切餐厅经营的原点"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/superiror_item_maintalk_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:text="主讲"
+                    android:textColor="@color/main_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/superiror_item_study_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/superior_item_rlayout_marginbottom"
+                    android:text="234已学"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llayout_two"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:layout_below="@+id/llayout_one"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/rlayout_three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/superior_item_rlayout_one_marginleft"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/superiror_item_iv_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ivnull" />
+
+                <TextView
+                    android:id="@+id/superiror_item_title_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/superiror_item_iv_three"
+                    android:layout_marginTop="-10dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="员工幸福是一切餐厅经营的原点"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/superiror_item_maintalk_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:text="主讲"
+                    android:textColor="@color/main_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/superiror_item_study_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/superior_item_rlayout_marginbottom"
+                    android:text="234已学"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlayout_four"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/superior_item_rlayout_two_marginright"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/superiror_item_iv_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ivnull" />
+
+                <TextView
+                    android:id="@+id/superiror_item_title_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/superiror_item_iv_four"
+                    android:layout_marginTop="-10dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="员工幸福是一切餐厅经营的原点"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/superiror_item_maintalk_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:text="主讲"
+                    android:textColor="@color/main_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/superiror_item_study_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/superior_item_rlayout_marginbottom"
+                    android:text="234已学"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wh.wang.scroopclassproject.activity.QuestionActivity">
+
+    <include layout="@layout/titlebarback_new" />
+
+
+    <TextView
+        android:id="@+id/help_one_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebarbackss"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="更新失败怎么办?"
+        android:textColor="#282828"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/help_one_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/help_one_title"
+        android:layout_marginLeft="15dp"
+        android:text="1.  确认网络连接是否异常"
+        android:textColor="#282828"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/help_two_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/help_one_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="2.  在下载过程中请谨慎删除本地的文件"
+        android:textColor="#282828"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/help_three_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/help_two_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="3.  由于安卓手机类型过多,手机系统等原因,可能在下载或者安装过程中出现了不兼容等问题,请及时反馈,技术人员及时修改完善"
+        android:textColor="#282828"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/help_four_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/help_three_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="4.  登录勺子课堂官网( www.shaoziketang.com )，点击右上角“勺子课堂APP”打开下载页面，通过手机微信扫描二维码下载安装即可"
+        android:textColor="#282828"
+        android:textIsSelectable="true"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/superiror_three_one_rlayout"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/superiror_three_one_rlayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="/  热门课程  /"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/superiror_three_one_rlayout_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/superiror_three_one_rlayout_title_iv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rightarro"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/superiror_three_one_rlayout_title_iv_more"
+                android:text="更多"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/superiror_three_one_rlayout_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/superiror_three_one_rlayout_title">
+
+        <ImageView
+            android:id="@+id/superiror_three_one_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="#60000000">
+
+            <TextView
+                android:id="@+id/superiror_three_one_tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="海淀。。。。"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/superiror_three_one_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="9.4"
+                android:textColor="@android:color/white" />
+
+
+            <TextView
+                android:id="@+id/superiror_three_one_tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="¥99"
+                android:textColor="@color/main_color" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

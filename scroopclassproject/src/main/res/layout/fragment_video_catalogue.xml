@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:id="@+id/catalogue_scroll"
+    tools:context="com.wh.wang.scroopclassproject.newproject.ui.fragment.video_info_frag.VideoCatalogueFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/catalogue_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="117dp"
+            android:layout_below="@+id/catalogue_list"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/cut_line"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F2F4F7" />
+
+            <ImageView
+                android:id="@+id/test_icon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="23dp"
+                android:src="@drawable/ksjg_ceshiicon" />
+
+            <LinearLayout
+                android:id="@+id/test_content"
+                android:layout_width="wrap_content"
+                android:layout_height="97dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/start_test"
+                android:layout_toRightOf="@+id/test_icon"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/test_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自测"
+                    android:textColor="#52555e"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/test_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="点击右侧按钮开始测试"
+                    android:textColor="#aeb4bc"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/start_test"
+                android:layout_width="92dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/apply_share_bg"
+                android:gravity="center"
+                android:text="@string/start_test"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_alignParentBottom="true"
+                android:background="#F2F4F7" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</ScrollView>

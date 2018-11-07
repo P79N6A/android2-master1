@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/item"
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:background="#fff"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+    <ImageView
+        android:id="@+id/select"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/none"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/item_study_img"
+        android:layout_width="116dp"
+        android:layout_height="63dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:layout_toRightOf="@+id/select"
+        android:src="@drawable/ivnull"/>
+
+
+
+    <TextView
+        android:id="@+id/item_study_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_study_img"
+        android:layout_toRightOf="@+id/item_study_img"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="#282828"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="40dp"
+        android:layout_height="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignBottom="@+id/item_study_img"
+        android:layout_toRightOf="@+id/item_study_img"
+        android:textSize="11sp"
+        android:text="@string/new_course_tag"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:visibility="gone"
+        android:background="@drawable/shape_new_course_radius_4_bg"/>
+
+    <TextView
+        android:id="@+id/item_study_process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_study_img"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/tag"
+        android:ellipsize="end"
+        android:maxEms="7"
+        android:text=""
+        android:visibility="gone"
+        android:textColor="#AEB4BC"
+        android:textSize="13sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F2F4F7"/>
+</RelativeLayout>

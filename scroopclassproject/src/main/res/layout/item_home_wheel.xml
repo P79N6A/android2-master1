@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wheel_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/wheel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:clipChildren="false">
+
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/wheel_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rb_1"-->
+            <!--android:layout_width="32dp"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:background="@drawable/wheel_circle_selector"-->
+            <!--android:button="@null"-->
+            <!--android:checked="true"/>-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rb_2"-->
+            <!--android:layout_width="32dp"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:layout_marginLeft="6dp"-->
+            <!--android:background="@drawable/wheel_circle_selector"-->
+            <!--android:button="@null"/>-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rb_3"-->
+            <!--android:layout_width="32dp"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:layout_marginLeft="6dp"-->
+            <!--android:background="@drawable/wheel_circle_selector"-->
+            <!--android:button="@null"/>-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rb_4"-->
+            <!--android:layout_width="32dp"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:layout_marginLeft="6dp"-->
+            <!--android:background="@drawable/wheel_circle_selector"-->
+            <!--android:button="@null" />-->
+    </RadioGroup>
+</RelativeLayout>

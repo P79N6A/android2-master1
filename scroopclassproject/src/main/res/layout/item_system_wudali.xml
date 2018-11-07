@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/system_wudali"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="104dp">
+    <RelativeLayout
+        android:id="@+id/wudali_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/wudali_1_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/yingyunli_new" />
+
+        <TextView
+            android:id="@+id/wudali_1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wudali_1_img"
+            android:layout_centerInParent="true"
+            android:text="营运力"
+            android:textColor="#333740"
+            android:textSize="@dimen/wuli_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wudali_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/wudali_2_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/rencaili_new" />
+
+        <TextView
+            android:id="@+id/wudali_2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wudali_2_img"
+            android:layout_centerInParent="true"
+            android:text="人才力"
+            android:textColor="#333740"
+            android:textSize="@dimen/wuli_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wudali_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/wudali_3_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/zhichili_new" />
+
+        <TextView
+            android:id="@+id/wudali_3_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wudali_3_img"
+            android:layout_centerInParent="true"
+            android:text="支持力"
+            android:textColor="#333740"
+            android:textSize="@dimen/wuli_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wudali_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/wudali_4_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/zhanlueli_new" />
+
+        <TextView
+            android:id="@+id/wudali_4_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wudali_4_img"
+            android:layout_centerInParent="true"
+            android:text="战略力"
+            android:textColor="#333740"
+            android:textSize="@dimen/wuli_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wudali_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/wudali_5_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/yingxiaoli_new" />
+
+        <TextView
+            android:id="@+id/wudali_5_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wudali_5_img"
+            android:layout_centerInParent="true"
+            android:text="营销力"
+            android:textColor="#333740"
+            android:textSize="@dimen/wuli_size" />
+    </RelativeLayout>
+</LinearLayout>

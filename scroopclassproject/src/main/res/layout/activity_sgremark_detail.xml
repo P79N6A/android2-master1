@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:background="#fff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f4f7"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_marginBottom="64dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/item_sg_remark"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/remark"
+                android:layout_marginTop="10dp"
+                android:background="#fff">
+
+                <View
+                    android:id="@+id/main_line"
+                    android:layout_width="4dp"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/main_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/main_line"
+                    android:layout_alignBottom="@+id/main_line"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/video_title_v"
+                    android:text="全部回复"
+                    android:textStyle="bold"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/remark_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/main_line"
+                    android:background="#fff">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <EditText
+        android:id="@+id/remark_edit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_sg_f2f4f7_3_bg"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        android:hint="评论"
+        android:layout_toLeftOf="@+id/add_remark"
+        android:textColorHint="@color/video_title"
+        android:textColor="@color/video_title_v"/>
+
+    <TextView
+        android:id="@+id/add_remark"
+        android:layout_width="72dp"
+        android:layout_height="44dp"
+        android:layout_alignTop="@+id/remark_edit"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="提交"
+        android:background="@drawable/apply_share_bg_3dp"
+        />
+
+
+</RelativeLayout>

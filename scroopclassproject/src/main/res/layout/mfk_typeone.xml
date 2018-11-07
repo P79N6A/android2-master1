@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/mf_type_one_llayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3">
+
+            <ImageView
+                android:id="@+id/mf_type_one_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ivnull"
+                android:scaleType="fitXY" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.7">
+
+            <TextView
+                android:id="@+id/mf_type_one_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="会员积分,如何使用积分绑定顾客,二次到店消费"
+                android:textColor="#282828"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mf_type_one_tv_title"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mf_type_one_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="14dp"
+                    android:text="马云"
+                    android:textColor="#aeb4bc"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mf_type_one_tv_duan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:singleLine="true"
+                    android:text="上海赤火品牌营销机构 创始人兼CEO"
+                    android:textColor="#aeb4bc"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

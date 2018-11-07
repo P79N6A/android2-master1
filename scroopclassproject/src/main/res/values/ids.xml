@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="month_key" type="id">month_key</item>
+    <item name="pos" type="id">month_pos</item>
+    <item name="label_pos" type="id">label_pos</item>
+    <item name="label_data" type="id">label_data</item>
+    <item name="title_l" type="id">title_l</item>
+    <item name="title_c" type="id">title_c</item>
+    <item name="title_r" type="id">title_r</item>
+</resources>

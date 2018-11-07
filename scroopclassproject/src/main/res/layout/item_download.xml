@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp">
+    <ImageView
+        android:id="@+id/select"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/none"/>
+    <ImageView
+        android:id="@+id/item_download_img"
+        android:layout_width="116dp"
+        android:layout_height="63dp"
+        android:layout_toRightOf="@+id/select"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/ivnull"/>
+    <TextView
+        android:id="@+id/item_download_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_download_img"
+        android:layout_toRightOf="@+id/item_download_img"
+        android:layout_toLeftOf="@+id/arrow"
+        android:layout_marginRight="8dp"
+        android:maxLines="2"
+        android:text="加盟热潮来袭"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:textColor="#282828"/>
+
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_download_img"
+        android:layout_toRightOf="@+id/item_download_img"
+        android:layout_marginRight="20dp"
+        android:textColor="#AEB4BC"
+        android:maxEms="7"
+        android:text="1课时"
+        android:ellipsize="end"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/item_download_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_download_img"
+        android:layout_toRightOf="@+id/item_time"
+        android:layout_marginRight="20dp"
+        android:textColor="#AEB4BC"
+        android:singleLine="true"
+        android:text="937.26MB"
+        android:ellipsize="end"
+        android:textSize="13sp"/>
+
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="6dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/down_more" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F2F4F7"/>
+</RelativeLayout>

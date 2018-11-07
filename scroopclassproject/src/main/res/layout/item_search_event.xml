@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/event_img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ivnull"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="@dimen/new_img_corner"/>
+
+    <com.wh.wang.scroopclassproject.newproject.view.SearchTextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:maxEms="10"
+        android:layout_below="@+id/event_img"
+        android:textColor="@color/video_title"
+        android:textSize="14sp"/>
+
+
+    <com.wh.wang.scroopclassproject.newproject.view.SearchTextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/address"
+        android:layout_below="@+id/event_img"
+        android:textColor="@color/video_title"
+        android:textSize="14sp"/>
+
+    <!--<com.wh.wang.scroopclassproject.newproject_dh.view.SearchTextView-->
+        <!--android:id="@+id/teacher"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_toRightOf="@+id/time"-->
+        <!--android:layout_below="@+id/event_img"-->
+        <!--android:textColor="@color/video_title"-->
+        <!--android:textSize="14sp"-->
+        <!--android:text=""/>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f2f4f7"
+        android:layout_below="@+id/address"/>
+</RelativeLayout>

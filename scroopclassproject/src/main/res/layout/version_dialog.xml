@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="294dp"
+    android:layout_height="328dp"
+    android:layout_centerInParent="true"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tv_version_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="版本更新"
+        android:textColor="#f36f2e"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_version_tip"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/tv_version_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roket" />
+
+    <TextView
+        android:id="@+id/tv_version_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_version_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="发现新版本,点击进行更新"
+        android:textColor="#282828" />
+
+    <Button
+        android:id="@+id/btn_version_result"
+        android:layout_width="250dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/tv_version_result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_pass_selector"
+        android:text="立即升级"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/btn_version_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_version_result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="遇到问题?"
+        android:textColor="#aeb4bc" />
+
+</RelativeLayout>

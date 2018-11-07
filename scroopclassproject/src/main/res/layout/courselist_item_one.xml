@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/courselist_item_one_rlayout_one"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp">
+
+        <ImageView
+            android:id="@+id/courselist_item_one_iv_one"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/ivnull"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/courselist_item_one_rlayout_two"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/courselist_item_one_rlayout_one"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="14dp">
+
+        <ImageView
+            android:id="@+id/courselist_item_one_iv_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@drawable/ivnull" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

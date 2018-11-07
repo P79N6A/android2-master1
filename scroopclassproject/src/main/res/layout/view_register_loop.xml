@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/register_loop"
+       android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/key_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/key_cancel"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/loop_cancel"/>
+
+        <ImageView
+            android:id="@+id/key_ok"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/loop_determent"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/key_body"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#EEEEEE"
+        android:layout_below="@+id/key_title">
+
+        <com.weigan.loopview.LoopView
+            android:id="@+id/num_loop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

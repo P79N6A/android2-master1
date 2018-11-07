@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="138dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/kong"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/originator"
+                android:text="您尚未加入任何学习小组"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/punching_card_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:textColor="@color/video_title_v"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="15dp"
+            android:text="打卡中"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/punching_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:background="#fff"
+            android:visibility="gone"
+            android:layout_below="@+id/punching_card_tv">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/punch_card_finish_tv"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#fff"
+            android:textColor="@color/video_title_v"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="已结束"
+            android:layout_below="@+id/punching_list"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/punched_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:visibility="gone"
+            android:overScrollMode="never"
+            android:layout_below="@+id/punch_card_finish_tv">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</ScrollView>

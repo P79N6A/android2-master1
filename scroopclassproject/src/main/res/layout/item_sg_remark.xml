@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/remark"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:riv_oval="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ivnull"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/video_title_v"
+        android:text=""
+        android:layout_alignTop="@+id/avatar"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/video_title"
+        android:text=""
+        android:layout_alignBottom="@+id/avatar"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avatar"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:layout_marginRight="15dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text=""
+        android:textColor="@color/originator"/>
+
+
+    <TextView
+        android:id="@+id/del_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content"
+        android:layout_toLeftOf="@+id/remark_icon"
+        android:layout_marginRight="15dp"
+        android:textSize="12sp"
+        android:textColor="@color/originator"
+        android:text="删除"
+        android:layout_marginLeft="2dp"
+        android:layout_alignTop="@+id/like_icon"/>
+
+    <ImageView
+        android:id="@+id/del_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:padding="2dp"
+        android:layout_toLeftOf="@+id/del_tv"
+        android:layout_below="@+id/content"
+        android:src="@drawable/shanchu"/>
+
+    <TextView
+        android:id="@+id/remark_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content"
+        android:textSize="12sp"
+        android:textColor="@color/originator"
+        android:text="0"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/like_icon"
+        android:layout_marginLeft="2dp"
+        android:layout_alignTop="@+id/remark_icon"/>
+
+    <ImageView
+        android:id="@+id/remark_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_toLeftOf="@+id/remark_num"
+        android:layout_below="@+id/content"
+        android:src="@drawable/pinglunicon"/>
+
+
+    <TextView
+        android:id="@+id/like_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content"
+        android:textSize="12sp"
+        android:textColor="@color/originator"
+        android:text="0"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="2dp"
+        android:layout_alignTop="@+id/remark_icon"/>
+
+    <ImageView
+        android:id="@+id/like_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_toLeftOf="@+id/like_num"
+        android:layout_below="@+id/content"
+        android:src="@drawable/dianzankongxin"/>
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/reply_list"  dianzanicon-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:layout_toRightOf="@+id/avatar"-->
+        <!--android:layout_below="@+id/like_num"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_marginTop="10dp">-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f2f4f7"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/like_icon"/>
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_title"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:paddingRight="13dp"
+    android:paddingLeft="15dp"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/new_logo"/>
+
+    <LinearLayout
+        android:id="@+id/search_content_l"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_weight="1"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/new_search_edit_bg_shape">
+
+        <TextView
+            android:id="@+id/search_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:textColor="#8B8F97"
+            android:text=""/>
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/search_icon"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/calendar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/calendar"/>
+
+    <ImageView
+        android:id="@+id/download"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/huancun"/>
+</LinearLayout>

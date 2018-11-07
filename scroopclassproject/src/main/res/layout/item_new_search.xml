@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp">
+
+    <ImageView
+        android:id="@+id/item_search_img"
+        android:layout_width="116dp"
+        android:layout_height="63dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/ivnull"/>
+    <com.wh.wang.scroopclassproject.newproject.view.SearchTextView
+        android:id="@+id/item_search_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_search_img"
+        android:layout_toRightOf="@+id/item_search_img"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:textColor="#282828"/>
+
+    <com.wh.wang.scroopclassproject.newproject.view.SearchTextView
+        android:id="@+id/item_search_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_search_img"
+        android:layout_toRightOf="@+id/item_search_img"
+        android:layout_marginRight="20dp"
+        android:textColor="#AEB4BC"
+        android:maxEms="7"
+        android:ellipsize="end"
+        android:textSize="13sp"/>
+
+    <com.wh.wang.scroopclassproject.newproject.view.SearchTextView
+        android:id="@+id/item_search_browse_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_search_img"
+        android:layout_toRightOf="@+id/item_search_teacher"
+        android:textColor="#AEB4BC"
+        android:textSize="13sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F2F4F7"/>
+</RelativeLayout>

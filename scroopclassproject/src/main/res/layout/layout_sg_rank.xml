@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ranking"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/punch_card"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/rank_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/paihangbang"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/per_rank_avatar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:riv_oval="true"
+        android:src="@drawable/ivnull"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/rank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/originator"
+        android:textSize="14sp"
+        android:text="位列排行榜"/>
+
+    <TextView
+        android:id="@+id/rank_num"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:background="@drawable/per_rank"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:text="第0名"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:textColor="@color/video_title_v"
+            android:gravity="left|center_vertical"
+            android:text="排行"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/video_title_v"
+            android:text="姓名"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/video_title_v"
+            android:text="已学"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:textSize="16sp"
+            android:textColor="@color/video_title_v"
+            android:text="学习时长"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ranking_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+    </android.support.v7.widget.RecyclerView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f2f4f7"/>
+    <TextView
+        android:id="@+id/check_rank"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/main_color"
+        android:textSize="14sp"
+        android:text="查看本组排行榜"/>
+
+    <View
+        android:id="@+id/rank_cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/punch_card"
+        android:background="#f2f4f7"/>
+</LinearLayout>

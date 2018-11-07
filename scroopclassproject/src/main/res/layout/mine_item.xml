@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/mine_item_collect_rl"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp">
+
+        <ImageView
+            android:id="@+id/mine_item_collect_iv_pics"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ivnull" />
+
+        <TextView
+            android:id="@+id/mine_item_collect_tv_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/mine_item_collect_iv_pics"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="你还记得积分"
+            android:textColor="#3e454f"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f5f6f9"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

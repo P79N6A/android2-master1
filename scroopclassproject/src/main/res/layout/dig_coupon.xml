@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="278dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/coupon_img"
+        android:layout_width="278dp"
+        android:layout_height="396dp"
+        android:src="@drawable/ivnull"
+        app:riv_corner_radius="5dp"/>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/coupon_img"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/tc_closedbutton"/>
+</RelativeLayout>

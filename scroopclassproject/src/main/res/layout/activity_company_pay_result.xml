@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_company_pay_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.wh.wang.scroopclassproject.newproject.ui.activity.CompanyResultActivity">
+
+    <include layout="@layout/titlebarback_new"/>
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:layout_below="@+id/titlebarbackss"
+        android:background="@drawable/chahua"
+        android:paddingTop="30dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="15dp">
+        <ImageView
+            android:id="@+id/success_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/success"/>
+        <TextView
+            android:id="@+id/result_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="#282828"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/head"
+        android:background="#dfe6f1"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/head"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/company_l"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="41dp"
+            android:textColor="#556378"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/company_r"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="41dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/invite_friends"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:text=""/>
+    </LinearLayout>
+</RelativeLayout>

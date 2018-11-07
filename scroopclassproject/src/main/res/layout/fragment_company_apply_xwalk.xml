@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<org.xwalk.core.XWalkView-->
+        <!--android:id="@+id/company_xwalk"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"></org.xwalk.core.XWalkView>-->
+
+    <WebView
+        android:id="@+id/company_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+    <View
+        android:id="@+id/mc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A1000000"
+        android:visibility="gone" />
+</RelativeLayout>

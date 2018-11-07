@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/down_finish_rl"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+        <CheckBox
+            android:id="@+id/dowm_finish_item_cb"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/selector_check_show"
+            android:button="@null"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/down_finish_rl_iv"
+            android:layout_width="111dp"
+            android:layout_height="66dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dowm_finish_item_cb"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ivnull" />
+
+        <TextView
+            android:id="@+id/down_finish_rl_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/downing_manager_rlayout_iv_more"
+            android:layout_toRightOf="@+id/down_finish_rl_iv"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="你还记得积分"
+            android:textColor="#3e454f"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/down_finish_rl_tv_nums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/down_finish_rl_iv"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="6课时"
+            android:textColor="#aeb4bc"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/down_finish_rl_tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/down_finish_rl_tv_nums"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="200M"
+            android:textColor="#aeb4bc"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/down_finish_rl_iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/down_more" />
+    </RelativeLayout>
+</LinearLayout>

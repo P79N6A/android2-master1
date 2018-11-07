@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_above="@+id/invite_menu"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:id="@+id/web_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@+id/invite_wb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:scrollbars="none">
+            </WebView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/invite_menu"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#fff"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/my_invite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/my_invite"
+            android:textSize="13sp"
+            android:textColor="#737889"/>
+        <TextView
+            android:id="@+id/invite_info"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="bottom|center_horizontal"
+            android:textSize="13sp"
+            android:textColor="#282828"
+            android:text="@string/invite_info"/>
+    
+        <LinearLayout
+            android:id="@+id/share"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_below="@+id/invite_info">
+
+            <LinearLayout
+                android:id="@+id/share_wechat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/share_iv_py"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/share_wechat" />
+
+                <TextView
+                    android:id="@+id/share_tv_py"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/wechat_tv"
+                    android:textColor="#71788a" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/share_pyq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/share_iv_pyq"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/share_pq" />
+
+                <TextView
+                    android:id="@+id/share_tv_pyq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/share_iv_pyq"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/share_pyq"
+                    android:textColor="#71788a" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/save_local"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/share_iv_local"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/share_bd" />
+
+                <TextView
+                    android:id="@+id/share_tv_local"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/share_iv_pyq"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/save_local"
+                    android:textColor="#71788a" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/invite_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/share"
+            android:textColor="#737889"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="#fff"
+            android:text="@string/tv_cancel"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/share"
+            android:background="#f2f4f7"/>
+        
+    </RelativeLayout>
+</RelativeLayout>

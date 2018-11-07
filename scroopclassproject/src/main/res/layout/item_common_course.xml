@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="#fff">
+
+    <FrameLayout
+        android:id="@+id/pos_frag"
+        android:layout_width="58dp"
+        android:layout_height="match_parent">
+        
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="19dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:paddingTop="3dp"
+            android:textSize="13sp"
+            android:textColor="#282828"
+            android:text="4"/>
+    </FrameLayout>
+
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/qiye_zwpic"
+        app:riv_oval="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:layout_toRightOf="@+id/pos_frag"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#282828"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_toLeftOf="@+id/time"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#2c333d"
+        android:layout_toLeftOf="@+id/like_num"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/like_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18"
+        android:textSize="11sp"
+        android:layout_toLeftOf="@+id/like"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:textColor="#7b7b7d"/>
+    
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="46dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/learn_list_unlike"
+        android:layout_alignParentRight="true"
+        android:paddingRight="30dp"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

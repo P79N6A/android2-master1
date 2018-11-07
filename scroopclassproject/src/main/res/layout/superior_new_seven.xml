@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/superiror_seven_rlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/superiror_seven_rlayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/superiror_seven_tv_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="/  最热话题  /"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/superiror_seven_llayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/superiror_seven_rlayout_title"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/superiror_seven_wen"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_sharp_main_color_selector"
+                android:text="看文章"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/superiror_seven_video"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/button_sharp_tran_selector"
+                android:text="看视频"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/superiror_seven_rlayout_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/superiror_seven_llayout_title"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:id="@+id/superiror_seven_llayout_one"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/superiror_seven_rlayout_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/superior_item_rlayout_one_marginleft"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/superiror_seven_iv_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ivnull" />
+
+                <TextView
+                    android:id="@+id/superiror_seven_title_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/superiror_seven_iv_one"
+                    android:layout_marginTop="-10dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="员工幸福是一切餐厅经营的原点"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/superiror_seven_rlayout_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/superior_item_rlayout_two_marginright"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/superiror_seven_iv_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ivnull" />
+
+                <TextView
+                    android:id="@+id/superiror_seven_title_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/superiror_seven_iv_two"
+                    android:layout_marginTop="-10dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="员工幸福是一切餐厅经营的原点"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/superiror_seven_llayout_two"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_below="@+id/superiror_seven_llayout_one"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/superiror_seven_rlayout_three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/superior_item_rlayout_one_marginleft"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/superiror_seven_iv_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ivnull" />
+
+                <TextView
+                    android:id="@+id/superiror_seven_title_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/superiror_seven_iv_three"
+                    android:layout_marginTop="-10dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="员工幸福是一切餐厅经营的原点"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/superiror_seven_rlayout_four"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/superior_item_rlayout_two_marginright"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/superiror_seven_iv_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ivnull" />
+
+                <TextView
+                    android:id="@+id/superiror_seven_title_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/superiror_seven_iv_four"
+                    android:layout_marginTop="-10dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="员工幸福是一切餐厅经营的原点"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/rl_seven_four_btn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/superiror_seven_llayout_two"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_sharp_main_color_selector"
+            android:text="查看全部课程"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/superiror_seven_llayout_wen"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/superiror_seven_llayout_title"
+        android:orientation="vertical"
+        android:weightSum="7">
+
+        <RelativeLayout
+            android:id="@+id/rl_seven_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/rl_seven_one_tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="#ff6633"
+                android:text="  1  "
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rl_seven_one_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/rl_seven_one_tv_num"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="别再用运营手册的咖啡机埃里克森的积分拉克"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_seven_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/rl_seven_two_tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="#ff9933"
+                android:text="  2  "
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rl_seven_two_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/rl_seven_two_tv_num"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="别再用运营手册的咖啡机埃里克森的积分拉克"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_seven_three"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/rl_seven_three_tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="#ffcc33"
+                android:text="  3  "
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rl_seven_three_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/rl_seven_three_tv_num"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="别再用运营手册的咖啡机埃里克森的积分拉克"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_seven_four"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/rl_seven_four_tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="#c2c2c2"
+                android:text="  4  "
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rl_seven_four_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/rl_seven_four_tv_num"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="别再用运营手册的咖啡机埃里克森的积分拉克"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_seven_five"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/rl_seven_five_tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="#c2c2c2"
+                android:text="  5  "
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rl_seven_five_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/rl_seven_five_tv_num"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="别再用运营手册的咖啡机埃里克森的积分拉克"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_seven_six"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/rl_seven_six_tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="#c2c2c2"
+                android:text="  6  "
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rl_seven_six_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/rl_seven_six_tv_num"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="别再用运营手册的咖啡机埃里克森的积分拉克"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_seven_seven"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/rl_seven_seven_btn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_sharp_main_color_selector"
+                android:text="查看全部课程"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8dc63f</color>
+    <color name="colorPrimaryDark">#8dc63f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="main_color">#8dc63f</color>
+    <color name="main_gray">#BFBFBF</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color> <!-- 红色 -->
+    <color name="fuceng">#33000000</color>
+    <color name="vedio_cap">#162734</color>
+    <color name="vedio_cap_press">#16bc6e</color>
+    <color name="start_member">#FFAD1E</color>
+    <color name="downing_red">#f75515</color>
+    <color name="read_main">#89c635</color>
+    <color name="vip_tip_textcolor"> #86B93F </color>
+    <color name="vip_tip_left"> #00C480</color>
+    <color name="super_main_press">#89c635</color>
+    <color name="super_main_normal">#28343f</color>
+    <color name="list_normal">#f7f9fc</color>
+    <color name="white_color_aplha">#33000000</color>
+    <color name="pq_price_1">#FFFFFF</color>
+    <color name="pq_price_2">#FF8941</color>
+    <color name="vip_tip_right">#FFAC1C </color>
+    <color name="pq_info">#282828</color>
+    <color name="t_select">#8dc63f</color>
+    <color name="t_unselect">#28343f</color>
+    <color name="label_unselect">#eef2f9</color>
+    <color name="label_select">#ffffff</color>
+    <color name="course_1">#81abf9</color>
+    <color name="course_2">#f6c776</color>
+    <color name="course_3">#ee8d6f</color>
+    <color name="course_4">#85d1a5</color>
+    <color name="course_5">#89cfe3</color>
+    <color name="many_pay">#FFAD1E</color>
+    <color name="examine">#C2C3C6</color>
+    <color name="c_fafbfc">#fafbfc</color>
+    <color name="video_title">#8B8F97</color>
+    <color name="video_title_v">#333740</color>
+    <color name="originator">#3C4A55</color>
+    <color name="white">#FFFFFF</color>
+    <color name="open_color">#63A6B1</color>
+    <color name="activity_background">#F2F4F7 </color>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/course_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:minHeight="168dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/item_course_img"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            app:riv_corner_radius="3dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ivnull" />
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:layout_alignBottom="@+id/item_course_img"
+            android:layout_alignRight="@+id/item_course_img"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/item_course_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_course_img"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxLines="2"
+            android:layout_marginTop="8dp"
+            android:text="员工幸福是一切餐厅经营的原点"
+            android:textColor="#282828"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_course_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_course_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="免费"
+            android:textColor="@color/super_main_press"
+            android:textSize="14sp" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/item_course_learn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginBottom="@dimen/superior_item_rlayout_marginbottom"-->
+            <!--android:text="0人已学"-->
+            <!--android:textSize="14sp" />-->
+</RelativeLayout>

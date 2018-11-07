@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/action_banner"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:riv_corner_radius="@dimen/new_img_corner"
+        android:src="@drawable/ivnull"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>

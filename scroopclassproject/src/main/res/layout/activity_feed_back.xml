@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.wh.wang.scroopclassproject.newproject.ui.activity.FeedBackActivity">
+    <include layout="@layout/titlebarback_new"/>
+    
+    <ImageView
+        android:id="@+id/feedback_icon"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/yijianfankui"
+        android:layout_below="@+id/titlebarbackss"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/feedback_icon"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="意见不嫌多，如有问题，请尽可能详细"
+        android:maxEms="10"
+        android:textColorHint="#A1A5B3"
+        android:layout_marginTop="24dp"
+        android:textSize="13sp"
+        android:padding="10dp"
+        android:background="@drawable/feedback_shape"
+        android:gravity="left"/>
+
+    <TextView
+        android:id="@+id/feedback_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedback_content"
+        android:layout_toLeftOf="@+id/feedback_all"
+        android:layout_marginTop="8dp"
+        android:textColor="#A1A5B3"
+        android:textSize="12sp"
+        android:text="0"/>
+
+    <TextView
+        android:id="@+id/feedback_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedback_content"
+        android:textSize="12sp"
+        android:textColor="#A1A5B3"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="/500"/>
+</RelativeLayout>

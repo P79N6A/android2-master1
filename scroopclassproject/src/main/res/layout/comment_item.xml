@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- 评论人图像 -->
+        <com.wh.wang.scroopclassproject.views.RoundImageView
+            android:id="@+id/commentItemImg"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- 评论人昵称 -->
+            <TextView
+                android:id="@+id/commentNickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="昵称11"
+                android:textColor="#162734"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/commentItemContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/commentNickname"
+                android:layout_marginTop="8dp"
+                android:text="这个课程我想免费免费免费看看看俺"
+                android:textColor="#49546d"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/commentItemTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/commentItemContent"
+                android:layout_marginBottom="14dp"
+                android:layout_marginTop="8dp"
+                android:text="2017.11.02  17:00"
+                android:textColor="#b6bac2"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/deleteText_img"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/commentItemContent"
+                android:src="@drawable/shanchu"
+                android:layout_marginRight="6dp"
+                android:layout_alignTop="@+id/deleteText"
+                android:layout_alignBottom="@+id/deleteText"
+                android:layout_toLeftOf="@+id/deleteText"/>
+            <TextView
+                android:id="@+id/deleteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/commentItemContent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/replyText"
+                android:text="删除"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:id="@+id/replyText_img"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/commentItemContent"
+                android:src="@drawable/huifu"
+                android:layout_alignTop="@+id/replyText"
+                android:layout_alignBottom="@+id/replyText"
+                android:layout_marginRight="6dp"
+
+                android:layout_toLeftOf="@+id/replyText"/>
+            <!-- 回复 -->
+            <TextView
+                android:id="@+id/replyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/commentItemContent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="10dp"
+                android:text="回复"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 评论回复列表 -->
+    <com.wh.wang.scroopclassproject.utils.NoScrollListView
+        android:id="@+id/replyList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="70dp"
+        android:background="#f2f4f7"
+        android:divider="#00000000" />
+</LinearLayout>

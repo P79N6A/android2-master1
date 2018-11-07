@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/type_one_rlayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/type_one_iv_line"
+            android:layout_width="4dp"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shuxian" />
+
+        <TextView
+            android:id="@+id/type_one_iv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/type_one_iv_line"
+            android:text="火热报名中"
+            android:textColor="#282828"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/type_one_rlayout_center"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_below="@+id/type_one_rlayout_top"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <GridView
+                    android:id="@+id/type_one_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:gravity="center"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="spacingWidthUniform">
+
+                </GridView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

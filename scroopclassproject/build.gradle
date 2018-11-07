@@ -1,0 +1,155 @@
+apply plugin: 'com.android.application'
+
+android {
+//    signingConfigs {
+//        config {
+//            keyAlias 'shaozikeji'
+//            keyPassword 'shaozikeji123456'
+//            storeFile file('F:/dh/szkj/111/MobilePlayerProject/shaozikeji.jks')
+//            storePassword 'shaozikeji123'
+//        }
+//    }
+    signingConfigs {
+        config {
+            keyAlias 'shaozikeji'
+            keyPassword 'shaozikeji123456'
+            storeFile file('/Users/tangzhihui/Desktop/com_project/android2-master/shaozikeji.jks')
+            storePassword 'shaozikeji123'
+        }
+        release {
+            keyAlias 'shaozikeji'
+            keyPassword 'shaozikeji123456'
+            storeFile file('/Users/tangzhihui/Desktop/com_project/android2-master/shaozikeji.jks')
+            storePassword 'shaozikeji123'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs']
+    }
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 38
+        versionName "4.6.0"
+        applicationId "com.wh.wang.scroopclassproject"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        signingConfig signingConfigs.config
+
+        ndk {
+            abiFilters "armeabi-v7a", "armeabi", "arm64-v8a"//,"x86"//,"armeabi"//,
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: "com.wh.wang.scroopclassproject",
+                JPUSH_CHANNEL: "developer-default",
+                JPUSH_APPKEY : "273bc6e2a2e04e5f66cb134a",
+                XIAOMI_APPKEY: "MI-5171761796758",
+                XIAOMI_APPID : "MI-2882303761517617758",//2882303761517617758
+                HUAWEI_APPID : "100046375",
+                MEIZU_APPKEY : "MZ-e2c580d43fe54670b580e193c8d3bebe",
+                MEIZU_APPID  : "MZ-114966"
+        ]
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.config
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false" //不显示log
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+    productFlavors {
+//        xiaomi {
+//            manifestPlaceholders = [UMENG_CHANNEL_CALUE: "xiaomi"]
+//        }
+//        wandoujia {
+//            manifestPlaceholders = [UMENG_CHANNEL_CALUE: "wandoujia"]
+//        }
+
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'//,'../ClassRoomSdk/libs'
+        }
+        maven { url 'https://jitpack.io' }
+    }
+
+    dependencies {
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+        androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+            exclude group: 'com.android.support', module: 'support-annotations'
+        })
+        compile 'cn.jiguang.sdk.plugin:huawei:3.1.5'
+        compile 'cn.jiguang.sdk.plugin:xiaomi:3.1.5'
+        compile 'cn.jiguang.sdk.plugin:meizu:3.1.5'
+        compile files('libs/universal-image-loader-1.9.5.jar')
+        compile project(':xutils')
+        compile files('libs/picasso-2.5.2.jar')
+        compile project(':jcvideoplayer-lib')
+        compile files('libs/wechat-sdk-android-with-mta.jar')
+        compile files('libs/alipaySdk-20170725.jar')
+        compile files('libs/Volley.jar')
+        compile files('libs/jcore-android-1.2.3.jar')
+        compile files('libs/jpush-android-3.1.5.jar')
+        compile project(':pulltorefresh')
+        //    compile files('libs/android-async-http-1.4.8.jar')
+        compile files('libs/umeng-analytics-7.4.0.jar')
+        compile files('libs/umeng-common-1.4.0.jar')
+        compile project(':swipe-library')
+        compile(name: 'AlivcReporter', ext: 'aar')
+        compile(name: 'AlivcPlayer', ext: 'aar')
+        compile(name: 'AliyunVodPlayer', ext: 'aar')
+        compile(name: 'AliyunVodPlayerView', ext: 'aar')
+        //    compile 'com.github.sendtion:XRichText:1.1'
+        //    compile project(':edusdk')
+        compile files('libs/hockeysdk-android.jar')
+        compile project(':xrichtext')
+        //    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3'
+        //    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3'
+        compile 'com.android.support.constraint:constraint-layout:1.0.2'
+        compile 'com.android.support.constraint:constraint-layout:1.0.2'
+        compile 'com.android.support:multidex:1.0.0'
+        compile 'com.github.bumptech.glide:glide:3.7.0'
+        compile 'com.squareup.retrofit2:retrofit:2.0.2'
+        compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+        compile 'com.squareup.retrofit2:converter-scalars:2.1.0'
+        compile 'com.weigan:loopView:0.1.2'
+        compile 'com.android.support:support-v4:25.3.1'
+        compile 'com.android.support:appcompat-v7:25.3.1'
+        compile 'com.android.support:support-v13:25.3.1'
+        compile 'com.android.support:recyclerview-v7:25.3.1'
+        compile 'com.makeramen:roundedimageview:2.3.0'
+        compile 'org.greenrobot:eventbus:3.1.1'
+        compile 'com.fang:dashview:v1.0.0'
+        compile 'com.journeyapps:zxing-android-embedded:3.3.0'
+        compile 'com.android.support:design:25.3.1'
+        compile 'io.reactivex:rxjava:1.1.0'
+        compile 'io.reactivex:rxandroid:1.1.0'
+        compile 'me.iwf.photopicker:PhotoPicker:0.8.4@aar'
+        compile 'jp.wasabeef:glide-transformations:2.0.1'
+        compile 'com.thetransactioncompany:jsonrpc2-base:1.38'
+        compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+
+        testCompile 'junit:junit:4.12'
+    }
+}
+
+dependencies {
+    compile 'com.android.support.constraint:constraint-layout:+'
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/essay_img"
+        android:layout_width="111dp"
+        android:layout_height="66dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ivnull"
+        app:riv_corner_radius="@dimen/new_img_corner"/>
+
+    <com.wh.wang.scroopclassproject.newproject.view.SearchTextView
+        android:id="@+id/essay_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/video_title_v"
+        android:layout_toRightOf="@+id/essay_img"
+        android:layout_alignTop="@+id/essay_img"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+    <ImageView
+        android:id="@+id/essay_icon"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/see_essay_num"
+        android:layout_alignBottom="@+id/see_essay_num"
+        android:layout_alignLeft="@+id/essay_title"
+        android:src="@drawable/read_icon"
+        android:layout_toRightOf="@+id/essay_img"/>
+
+    <com.wh.wang.scroopclassproject.newproject.view.SearchTextView
+        android:id="@+id/see_essay_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/essay_img"
+        android:layout_toRightOf="@+id/essay_icon"
+        android:layout_marginLeft="12dp"
+        android:textSize="11sp"
+        android:textColor="@color/video_title"/>
+
+    <View
+        android:id="@+id/cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F2F4F7"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:layout_below="@+id/essay_img"/>
+</RelativeLayout>

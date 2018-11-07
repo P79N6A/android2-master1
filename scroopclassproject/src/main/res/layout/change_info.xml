@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.wh.wang.scroopclassproject.activity.ChangeInfoActivity">
+
+    <include layout="@layout/titlebarback" />
+
+    <RelativeLayout
+        android:id="@+id/changeinfo_rlayout_info"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/white">
+
+        <com.wh.wang.scroopclassproject.views.RoundImageView
+            android:id="@+id/changeinfo_iv_logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/headportrait" />
+
+        <TextView
+            android:id="@+id/changeinfo_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/changeinfo_iv_logo"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/caixian" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llayout_one"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/changenane_logo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/change_name" />
+
+        <TextView
+            android:id="@+id/changenane_name_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/changenane_logo"
+            android:text="昵称 :"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_changename"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/changenane_name_des"
+            android:background="@null"
+            android:hint="例如:真水无香"
+            android:textColor="@android:color/black"
+            android:textColorHint="#FF999999"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/caixian" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llayout_two"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/changepalce_logo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/change_pace" />
+
+        <TextView
+            android:id="@+id/changepalce_name_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/changepalce_logo"
+            android:text="地区 :"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_change_palce"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/changepalce_name_des"
+            android:background="@null"
+            android:hint="例如:北京"
+            android:textColor="@android:color/black"
+            android:textColorHint="#FF999999"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/caixian" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llayout_three"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/changenice_logo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/change_nice" />
+
+        <TextView
+            android:id="@+id/changenice_name_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/changenice_logo"
+            android:text="品牌 :"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_change_nice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/changenice_name_des"
+            android:background="@null"
+            android:hint="例如:勺子勺子"
+            android:textColor="@android:color/black"
+            android:textColorHint="#FF999999"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/caixian" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llayout_four"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/changeemploy_logo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/change_employ" />
+
+        <TextView
+            android:id="@+id/changeemploy_name_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/changeemploy_logo"
+            android:text="职位 :"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_change_employ"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/changeemploy_name_des"
+            android:background="@null"
+            android:hint="例如: 总经理"
+            android:textColor="@android:color/black"
+            android:textColorHint="#FF999999"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/caixian" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llayout_five"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/changephone_logo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/change_phone" />
+
+        <TextView
+            android:id="@+id/changephone_name_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/changephone_logo"
+            android:text="电话 :"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_change_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/changephone_name_des"
+            android:background="@null"
+            android:hint="例如:139********"
+            android:textColor="@android:color/black"
+            android:textColorHint="#FF999999"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/change_finish_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@+id/llayout_login_pass"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_selector"
+        android:padding="4dp"
+        android:text="完成"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+</LinearLayout>

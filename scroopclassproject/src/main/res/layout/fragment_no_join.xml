@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f4f7"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/join_hint"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/join_action"
+            android:textColor="@color/originator"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/join_hint"
+            android:background="#f2f4f7" />
+
+        <LinearLayout
+            android:id="@+id/join_head"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@+id/join_hint"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0.5dp"
+            android:layout_toLeftOf="@+id/join_num"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/join_num"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/join_head"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="0人已报名"
+            android:textColor="@color/originator"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/join_group"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/join_head"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/apply_share_bg_3dp"
+            android:gravity="center"
+            android:text="@string/join_group"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff">
+
+        <LinearLayout
+            android:id="@+id/introduce_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/introduce"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="56dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lines="1"
+                android:text="@string/introduce_course"
+                android:textColor="@color/main_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/rule"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/rule_of_event"
+                android:textColor="@color/originator"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/cut_line"
+            android:layout_width="64dp"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/introduce_title"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_color" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#f2f4f7" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/introduce_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

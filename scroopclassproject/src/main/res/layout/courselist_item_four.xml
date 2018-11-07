@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/courselist_item_four_rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/courselist_item_four_iv"
+            android:layout_width="92dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/ivnull" />
+
+        <TextView
+            android:id="@+id/courselist_item_four_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/courselist_item_four_iv"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="你还记得积分"
+            android:textColor="#282828"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/courselist_item_four_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/courselist_item_four_tv_title"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/courselist_item_four_iv"
+            android:text="100"
+            android:textColor="@color/super_main_press"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#e0e7f1" />
+
+    </RelativeLayout>
+</LinearLayout>

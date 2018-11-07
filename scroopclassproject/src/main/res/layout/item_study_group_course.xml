@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="86dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/shape_sg_course_bg">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img_course"
+        android:layout_width="111dp"
+        android:layout_height="66dp"
+        app:riv_corner_radius="3dp"
+        android:src="@drawable/ivnull"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/title_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/video_title_v"
+        android:textSize="14sp"
+        android:layout_alignTop="@+id/img_course"
+        android:layout_toRightOf="@+id/img_course"
+        android:singleLine="true"
+        android:text="挑战时间："/>
+
+    <TextView
+        android:id="@+id/num_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_color"
+        android:textSize="12sp"
+        android:layout_below="@+id/title_course"
+        android:layout_toRightOf="@+id/img_course"
+        android:singleLine="true"
+        android:text="已报名人数："/>
+
+    <ImageView
+        android:id="@+id/icon_course"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_toRightOf="@+id/img_course"
+        android:layout_alignBottom="@+id/img_course"
+        android:layout_marginBottom="1dp"
+        android:src="@drawable/xiaojie"/>
+    <TextView
+        android:id="@+id/cate_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon_course"
+        android:layout_alignBottom="@+id/img_course"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginLeft="7dp"
+        android:text=""
+        android:textColor="@color/originator"/>
+    
+    <TextView
+        android:id="@+id/imm_join"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_course"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="#fff"
+        android:paddingRight="9dp"
+        android:paddingLeft="9dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="@string/imm_join"
+        android:background="@drawable/apply_share_bg_3dp"/>
+</RelativeLayout>

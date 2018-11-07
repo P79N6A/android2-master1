@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f4f7">
+
+    <TextView
+        android:id="@+id/replyContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="回复的内容"
+        android:textColor="#49546d"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/replyTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/replyContent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="2017-10-29"
+        android:textColor="#b6bac2"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/reply_delet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/replyContent"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/reply_add"
+        android:drawableLeft="@drawable/shanchu"
+        android:drawablePadding="6dp"
+        android:text="删除"
+        android:textColor="#999999"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/reply_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/replyContent"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/huifu"
+        android:drawablePadding="6dp"
+        android:text="回复"
+        android:textColor="#999999"
+        android:textSize="16sp" />
+</RelativeLayout>

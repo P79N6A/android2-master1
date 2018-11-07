@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wh.wang.scroopclassproject.newproject.ui.fragment.scan_resule_frag.OldResultFragment">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_below="@+id/titlebarbackss">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/success_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/success"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/success_icon"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:textColor="#282828"
+                android:text="扫码确认成功"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#F2F4F7"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/head"
+        android:textSize="14sp"
+        android:textColor="#FFAD1E"
+        android:text="姓名"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_alignTop="@+id/name_tv"
+        android:layout_toRightOf="@+id/name_tv"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:layout_marginLeft="20dp"
+        android:textSize="14sp"
+        android:textColor="#929292"
+        android:text="勺子课堂"/>
+
+    <TextView
+        android:id="@+id/tel_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/name_tv"
+        android:textSize="14sp"
+        android:textColor="#FFAD1E"
+        android:text="电话"/>
+
+
+    <TextView
+        android:id="@+id/tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_alignTop="@+id/tel_tv"
+        android:layout_toRightOf="@+id/tel_tv"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:layout_marginLeft="20dp"
+        android:textSize="14sp"
+        android:textColor="#929292"
+        android:text="18836542365"/>
+
+    <TextView
+        android:id="@+id/course_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/tel_tv"
+        android:textSize="14sp"
+        android:textColor="#FFAD1E"
+        android:text="课程"/>
+
+    <TextView
+        android:id="@+id/course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_alignTop="@+id/course_tv"
+        android:layout_toRightOf="@+id/course_tv"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:layout_marginLeft="20dp"
+        android:textColor="#929292"
+        android:text="外卖五期第三场"/>
+
+</RelativeLayout>

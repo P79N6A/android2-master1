@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wh.wang.scroopclassproject.newproject.fun_class.gift_bag.GiftDialogActivity">
+
+
+    <ImageView
+        android:id="@+id/content"
+        android:layout_width="283dp"
+        android:layout_height="402dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/libaoxintcbjywz"/>
+
+    <TextView
+        android:id="@+id/get"
+        android:layout_width="240dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:text="马上领取"
+        android:background="@drawable/xslblqan"/>
+</RelativeLayout>

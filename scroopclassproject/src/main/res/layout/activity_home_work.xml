@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_work"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wh.wang.scroopclassproject.newproject.ui.activity.LookHomeWorkActivity">
+
+    <include layout="@layout/titlebarback_new"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_above="@+id/add_work"
+        android:fillViewport="true"
+        android:layout_below="@+id/titlebarbackss">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/work_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#282828"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="21sp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"/>
+
+            <TextView
+                android:id="@+id/work_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/work_title"
+                android:layout_marginTop="12dp"
+                android:textColor="#282828"
+                android:textSize="10sp"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/work_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_alignTop="@+id/work_from"
+                android:layout_toRightOf="@+id/work_from"
+                android:layout_marginLeft="20dp"
+                android:textSize="10sp"
+                android:textColor="#282828"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/work_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_below="@+id/work_from"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"/>
+            <View
+                android:id="@+id/cut_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#f2f4f7"
+                android:layout_below="@+id/work_content"/>
+            
+            <RelativeLayout
+                android:id="@+id/good_work"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/cut_line">
+                <TextView
+                    android:id="@+id/good_work_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:textColor="#282828"
+                    android:gravity="center"
+                    android:text=""/>
+
+
+                <LinearLayout
+                    android:id="@+id/good_work_person"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:layout_toLeftOf="@+id/arrow"
+                    android:layout_toRightOf="@+id/good_work_num"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginLeft="13dp">
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/intonext"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:textColor="#9a9a9a"
+                android:textSize="14sp"
+                android:background="#f2f4f7"
+                android:text="最受欢迎"
+                android:layout_below="@+id/good_work"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/work_list_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/welcome">
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/all"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:textColor="#9a9a9a"
+                android:textSize="14sp"
+                android:background="#f2f4f7"
+                android:text="全部作业"
+                android:layout_below="@+id/work_list_welcome"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/work_list_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/all">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </ScrollView>
+    <include layout="@layout/view_bottom_remark"/>
+</RelativeLayout>

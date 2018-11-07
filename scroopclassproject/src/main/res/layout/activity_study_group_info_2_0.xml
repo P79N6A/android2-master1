@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aspsine.swipetoloadlayout.SwipeToLoadLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f4f7">
+
+    <ScrollView
+        android:id="@id/swipe_target"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/course_bg"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ivnull" />
+
+            <FrameLayout
+                android:id="@+id/study_group_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/course_bg"
+                android:layout_alignTop="@+id/course_bg"
+                android:background="#88000000">
+
+            </FrameLayout>
+            <TextView
+                android:id="@+id/rule_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/course_bg"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"
+                android:textSize="12sp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text="挑战班规则"
+                android:drawablePadding="4dp"
+                android:drawableLeft="@drawable/huodongguizewenhao"/>
+            <FrameLayout
+                android:id="@+id/study_group_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/study_group_head"
+                android:layout_marginTop="-20dp"
+                android:background="@drawable/shape_gs_info_bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/remark_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/study_group_content"
+                android:visibility="gone">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/bonus_hint"
+                    android:background="#f2f4f7" />
+
+                <!--<com.wh.wang.scroopclassproject.newproject_dh.view.LRLineTextView-->
+                <!--android:layout_width="190dp"-->
+                <!--android:layout_height="57dp"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_below="@+id/bonus_hint"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:gravity="center"-->
+                <!--android:visibility="invisible"-->
+                <!--android:text="@string/study_remark"-->
+                <!--android:textColor="@color/video_title_v"-->
+                <!--android:textSize="16sp"-->
+                <!--android:textStyle="bold" />-->
+
+                <RelativeLayout
+                    android:id="@+id/remark_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="#fff"
+                    android:layout_below="@+id/bonus_hint"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp">
+
+                    <View
+                        android:id="@+id/course_line"
+                        android:layout_width="4dp"
+                        android:layout_height="18dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/main_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/course_line"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/video_title_v"
+                        android:textStyle="bold"
+                        android:text="学习心得"/>
+
+                    <ImageView
+                        android:id="@+id/yuan_arrow"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="2dp"
+                        android:visibility="gone"
+                        android:src="@drawable/yuanjiantou"/>
+
+                    <TextView
+                        android:id="@+id/rule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/video_title"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        android:layout_toLeftOf="@+id/yuan_arrow"
+                        android:layout_centerVertical="true"
+                        android:text="追加心得"
+                        android:layout_marginRight="5dp"/>
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/remark_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/remark_tv">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@id/swipe_load_more_footer"
+        layout="@layout/layout_foot" />
+</com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
